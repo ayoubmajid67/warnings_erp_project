@@ -1,0 +1,657 @@
+[
+  {
+    "id": "member-alae",
+    "name": "ACHEACHE ALAA EDDINE",
+    "email": "alaedineacheache@gmail.com",
+    "phone": "212 623-909851",
+    "role": "Back-end Developer - CVS Service",
+    "domain": "Fullstack Web Development",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Alae_Eddine_Acheache/profile.png",
+    "cvPath": "/profiles/Alae_Eddine_Acheache/cv.pdf",
+    "github": "https://github.com/ALAAEddineACHEACHE",
+    "linkedin": "https://www.linkedin.com/in/alaaeddine-acheache/",
+    "joinedAt": "2024-10-01",
+    "description": "Fullstack Web Development Engineering student, passionate about web development with Spring Boot and microservices. Currently seeking a pre-employment Final Study Project (PFE) internship.",
+    "skills": [
+      { "name": "HTML/CSS", "category": "Front-End" },
+      { "name": "JavaScript", "category": "Front-End" },
+      { "name": "React.js", "category": "Front-End" },
+      { "name": "Next.js", "category": "Front-End" },
+      { "name": "Angular", "category": "Front-End" },
+      { "name": "Flutter", "category": "Mobile" },
+      { "name": "Spring Boot", "category": "Back-End" },
+      { "name": "MicroServices", "category": "Back-End" },
+      { "name": "Laravel", "category": "Back-End" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "PHP", "category": "Programming" },
+      { "name": "MySQL", "category": "Database" },
+      { "name": "MongoDB", "category": "Database" },
+      { "name": "Docker", "category": "DevOps" },
+      { "name": "Kubernetes", "category": "DevOps" },
+      { "name": "CI/CD Pipeline", "category": "DevOps" },
+      { "name": "Azure/AWS", "category": "Cloud" },
+      { "name": "Power BI", "category": "Data" },
+      { "name": "Scrum/Jira", "category": "Project Management" }
+    ],
+    "experiences": [
+      {
+        "company": "INTELLCAP-ERP-SOLUTIONS",
+        "role": "ERP Developer/Engineer",
+        "description": "Collaborated with a 17-person team to design and develop a large-scale internal ERP system for INTELLCAP SARL.",
+        "startDate": "October 2025",
+        "endDate": null
+      },
+      {
+        "company": "INTELLCAP",
+        "role": "Fullstack Developer (Mr-Booking Project)",
+        "description": "Implemented a complete reservation system. Developed a full-stack solution with Next.js and Spring Boot + PostgreSQL.",
+        "startDate": "July 2025",
+        "endDate": "September 2025"
+      }
+    ],
+    "projects": [
+      { "name": "Event Management Web Application", "description": "Created a web application to centralize the management of events, exhibitors, and documents." },
+      { "name": "E-commerce Web Application", "description": "Designed and developed a complete e-commerce web application with React.js and Spring Boot." },
+      { "name": "Hackathon - CivicTech Web App #SMARTICITIES", "description": "Participated in a hackathon to improve citizen-municipal administration relations.", "date": "May 2024" }
+    ],
+    "education": [
+      { "school": "École Marocaine des Sciences de l'Ingénieur (EMSI)", "degree": "Engineering in Computer Science and Networks (MIAGE)", "period": "September 2018 - 2024" },
+      { "school": "Faculté des sciences FS", "degree": "License in Mathematics and Computer Science", "period": "October 2024 - Present" }
+    ],
+    "languages": [
+      { "name": "English", "level": "C1" },
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "C1" }
+    ]
+  },
+  {
+    "id": "member-amal",
+    "name": "AMAL LASTAK",
+    "email": "amallastak891@gmail.com",
+    "phone": "212 612-124695",
+    "role": "AI Developer - Email Classification & CVS Service",
+    "domain": "Intelligence Artificielle et Robotique",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Amal_Lastak/profile.png",
+    "cvPath": "/profiles/Amal_Lastak/cv.pdf",
+    "github": "https://github.com/amallastak",
+    "linkedin": "https://www.linkedin.com/in/amal-lastak/",
+    "joinedAt": "2024-10-01",
+    "description": "Ingénieure en IA passionnée par le ML/DL, spécialisée en NLP et Computer Vision. Recherche un stage PFA pour développer des systèmes autonomes innovants.",
+    "skills": [
+      { "name": "Machine Learning", "category": "AI/ML" },
+      { "name": "Deep Learning", "category": "AI/ML" },
+      { "name": "TensorFlow", "category": "AI/ML" },
+      { "name": "PyTorch", "category": "AI/ML" },
+      { "name": "Computer Vision", "category": "AI/ML" },
+      { "name": "NLP", "category": "AI/ML" },
+      { "name": "Reinforcement Learning", "category": "AI/ML" },
+      { "name": "LLM/RAG", "category": "AI/ML" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "Flask/FastAPI", "category": "Back-End" },
+      { "name": "C/C++", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "Arduino/ESP32", "category": "IoT" },
+      { "name": "Raspberry Pi", "category": "IoT" },
+      { "name": "Docker", "category": "DevOps" },
+      { "name": "Git/GitHub", "category": "DevOps" },
+      { "name": "SolidWorks", "category": "3D Design" },
+      { "name": "Agile/Scrum", "category": "Project Management" }
+    ],
+    "experiences": [],
+    "projects": [
+      { "name": "AI Health Application", "description": "Conception et optimisation d'un modèle prédictif (XGBoost) pour l'évaluation des risques de maladies chroniques.", "date": "2024" },
+      { "name": "Solar Panel Cleaning Robot", "description": "Conception d'un robot autonome intelligent avec traitement d'image, commandé par Raspberry Pi.", "date": "2025" },
+      { "name": "Intelligent Assistant with RAG & Gemini API", "description": "Développement d'un assistant capable de répondre à partir de documents.", "date": "2025" }
+    ],
+    "education": [
+      { "school": "École Nationale d'Intelligence Artificielle et Digitale", "degree": "Engineering in AI and Robotics (Speciality: Robotics and Connected Objects)" },
+      { "school": "Faculté des Sciences et Techniques", "degree": "Mathematics, Physics, Computer Science" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-amine",
+    "name": "AMINE CHARRO",
+    "email": "amine_charro@yahoo.com",
+    "phone": "212 639-343300",
+    "role": "Front-end Developer - CVS Service",
+    "domain": "Informatique",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Amine_Charro/profile.png",
+    "cvPath": "/profiles/Amine_Charro/cv.pdf",
+    "github": "https://github.com/aminecharro01",
+    "linkedin": "https://www.linkedin.com/in/charroamine/",
+    "joinedAt": "2024-10-01",
+    "description": "Futur ingénieur et passionné de technologie basé à Rabat, s'intéressant à l'innovation sous toutes ses formes. Il est à la recherche d'une expérience professionnelle valorisant ses multiples compétences techniques, managériales et créatives.",
+    "skills": [
+      { "name": "JavaScript", "category": "Front-End" },
+      { "name": "React", "category": "Front-End" },
+      { "name": "PHP", "category": "Back-End" },
+      { "name": "Laravel", "category": "Back-End" },
+      { "name": "C++", "category": "Programming" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "MongoDB", "category": "Database" },
+      { "name": "SQL/T-SQL", "category": "Database" },
+      { "name": "GitHub/GitLab", "category": "DevOps" },
+      { "name": "Figma", "category": "Design" },
+      { "name": "Photoshop", "category": "Design" },
+      { "name": "Premiere Pro", "category": "Design" },
+      { "name": "Data Science", "category": "AI/ML" },
+      { "name": "Big Data Technologies", "category": "Data" },
+      { "name": "Project Management", "category": "Management" }
+    ],
+    "experiences": [
+      {
+        "company": "EMSI",
+        "role": "Étudiant Ingénieur",
+        "description": "Participation à des cours avancés en génie logiciel et à des projets de développement full stack.",
+        "startDate": "Oct 2024",
+        "endDate": null
+      },
+      {
+        "company": "AMDEJ",
+        "role": "Chef de Projet Communication et Visuel",
+        "description": "Développement d'une plateforme en ligne interactive pour l'orientation des jeunes.",
+        "startDate": "Avr 2024",
+        "endDate": "Sep 2024"
+      },
+      {
+        "company": "ISTA NTIC",
+        "role": "Stagiaire en Développement Web",
+        "description": "Création d'une application web personnalisée E-attestation pour la gestion des attestations de travail.",
+        "startDate": null,
+        "endDate": "Mai 2024"
+      }
+    ],
+    "projects": [],
+    "education": [
+      { "school": "ÉCOLE MAROCAINE DES SCIENCES DE L'INGÉNIEUR", "degree": "Diplôme d'Ingénieur en Génie Informatique", "startDate": "Oct 2024" },
+      { "school": "ISTA NTIC Beni Mellal", "degree": "Diplôme en Développement Web Full Stack", "startDate": "Sep 2022", "endDate": "Juil 2024" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-ayman",
+    "name": "AYMAN EL HILALI",
+    "email": "aymanelhilali658@gmail.com",
+    "phone": "212 766-411058",
+    "role": "Back-end Developer - CVS Service",
+    "domain": "Software Engineering & DevOps",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Ayman_El_Hilali/profile.png",
+    "cvPath": "/profiles/Ayman_El_Hilali/cv.pdf",
+    "github": "https://github.com/aymanbestone",
+    "linkedin": "https://www.linkedin.com/in/ayman-el-hilali",
+    "joinedAt": "2024-10-01",
+    "description": "Fifth-year Computer and Network Engineering student at EMSI, passionate about software development and DevOps. Currently serving as a Backend Designer-Developer and Entrepreneur at Intellcap.",
+    "skills": [
+      { "name": "Java", "category": "Programming" },
+      { "name": "Spring Boot", "category": "Back-End" },
+      { "name": "C#", "category": "Programming" },
+      { "name": "ASP.NET", "category": "Back-End" },
+      { "name": "Express.js", "category": "Back-End" },
+      { "name": "React", "category": "Front-End" },
+      { "name": "Tailwind", "category": "Front-End" },
+      { "name": "Docker", "category": "DevOps" },
+      { "name": "Kubernetes", "category": "DevOps" },
+      { "name": "Jenkins", "category": "DevOps" },
+      { "name": "AWS", "category": "Cloud" },
+      { "name": "Terraform", "category": "DevOps" },
+      { "name": "Ansible", "category": "DevOps" },
+      { "name": "CI/CD Pipeline", "category": "DevOps" },
+      { "name": "MySQL", "category": "Database" },
+      { "name": "MongoDB", "category": "Database" },
+      { "name": "Power BI", "category": "Data" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "Scrum/Jira", "category": "Project Management" }
+    ],
+    "experiences": [
+      {
+        "company": "INTELLCAP SARL MAROC",
+        "role": "Concepteur Développeur Backend",
+        "description": "Developed and maintained backend projects, designing and implementing ERP applications using microservices architecture.",
+        "startDate": "July 2025",
+        "endDate": null
+      },
+      {
+        "company": "Freelance",
+        "role": "Développeur Backend",
+        "description": "Designed a microservices architecture with API Gateway. Developed a salon booking application using Spring Boot, Keycloak, RabbitMQ, and Docker Compose.",
+        "startDate": "April 2025",
+        "endDate": "June 2025"
+      },
+      {
+        "company": "MuniSys",
+        "role": "Intern",
+        "description": "Transitioned from classic deployment to a DevOps approach, utilizing Gitlab, Nutanix, Azure, Ansible/Terraform, Docker/Kubernetes, and Jenkins.",
+        "startDate": "September 2024",
+        "endDate": "November 2024"
+      },
+      {
+        "company": "TechFor Titude",
+        "role": "Intern",
+        "description": "Developed the Rocko application for automated stock and order management using the MERN Stack.",
+        "startDate": "June 2024",
+        "endDate": "August 2024"
+      }
+    ],
+    "projects": [
+      { "name": "MRBOOKING", "description": "Developed a travel booking platform offering hotel and flight reservation options using NextJs and Spring Boot with PostgreSQL." }
+    ],
+    "education": [
+      { "school": "École Marocaine des Sciences de l'Ingénieur (EMSI)", "degree": "Ingénieur en Génie Informatique et Réseaux", "startDate": "2021", "endDate": "2026" },
+      { "school": "Etablissement Assabil", "degree": "Bac Sciences Expérimentales - Option Sciences Physiques", "startDate": "2020", "endDate": "2021" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-brahim",
+    "name": "BRAHIM BOUAZ",
+    "email": "brahim.bouaz@uit.ac.ma",
+    "phone": "212 709-594783",
+    "role": "Python Developer - Registry Service",
+    "domain": "Intelligence Artificielle et Ingénierie de Données",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Brahim_Bouaz/profile.png",
+    "cvPath": "/profiles/Brahim_Bouaz/cv.pdf",
+    "github": "https://github.com/bbouazuit",
+    "linkedin": "https://www.linkedin.com/in/brahim-bouaz-7875b9317/",
+    "joinedAt": "2024-10-01",
+    "description": "Étudiant en Master Intelligence Artificielle et Internet des Objets (IoT), avec un intérêt marqué pour l'application de l'IA à des projets innovants et concrets.",
+    "skills": [
+      { "name": "Python", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "SQL/PL-SQL", "category": "Database" },
+      { "name": "Pandas", "category": "Data" },
+      { "name": "NumPy", "category": "Data" },
+      { "name": "Scikit-Learn", "category": "AI/ML" },
+      { "name": "TensorFlow", "category": "AI/ML" },
+      { "name": "Keras", "category": "AI/ML" },
+      { "name": "PyTorch", "category": "AI/ML" },
+      { "name": "LLMs", "category": "AI/ML" },
+      { "name": "NLP", "category": "AI/ML" },
+      { "name": "Computer Vision", "category": "AI/ML" },
+      { "name": "Reinforcement Learning", "category": "AI/ML" },
+      { "name": "Spring", "category": "Back-End" },
+      { "name": "Next.js", "category": "Front-End" },
+      { "name": "Angular", "category": "Front-End" }
+    ],
+    "experiences": [
+      {
+        "company": "DXC TECHNOLOGY",
+        "role": "Stage Cloud & Platform Services",
+        "description": "Réalisation d'un projet d'analyse de données complète. Développement d'une application PySide6 pour l'automatisation du traitement de fichiers Excel.",
+        "startDate": "2024",
+        "endDate": "Present"
+      },
+      {
+        "company": "FUJIKURA AUTOMOTIVE MOROCCO",
+        "role": "Stage en Intelligence Artificielle",
+        "description": "Stage en Intelligence Artificielle et Automatisation de Données.",
+        "startDate": "2023",
+        "endDate": "2024"
+      }
+    ],
+    "projects": [
+      { "name": "Application web de gestion des tâches RH", "description": "Développement d'une application web utilisant Java Spring, Angular et SQL." },
+      { "name": "Compteur de Personnes en Temps Réel", "description": "Système automatique de comptage de personnes via Python, OpenCV et YOLOv8." }
+    ],
+    "education": [
+      { "school": "Université Ibno Tofail", "degree": "Master d'excellence Intelligence Artificielle et Objets Connectés" },
+      { "school": "Université Ibno Tofail", "degree": "License d'excellence de l'intelligence artificielle et l'ingénierie de données" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-sana",
+    "name": "EL FAHIM SANA",
+    "email": "elfahimel@gmail.com",
+    "phone": "212 621-901167",
+    "role": "Data Developer - Data Warehouse & CVS Service",
+    "domain": "Artificial Intelligence and Data Science",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/El_Fahim_Sana/profile.png",
+    "cvPath": "/profiles/El_Fahim_Sana/cv.pdf",
+    "github": "https://github.com/ELFAHIM-SANA",
+    "linkedin": "https://www.linkedin.com/in/sana-el-fahim-07824025a/",
+    "joinedAt": "2024-10-01",
+    "description": "An AI developer seeking opportunities in artificial intelligence or data science. Experienced in data collection, NLP model development, web development, and digital marketing.",
+    "skills": [
+      { "name": "Machine Learning", "category": "AI/ML" },
+      { "name": "NLP", "category": "AI/ML" },
+      { "name": "PyTorch", "category": "AI/ML" },
+      { "name": "TensorFlow", "category": "AI/ML" },
+      { "name": "Keras", "category": "AI/ML" },
+      { "name": "Scikit-learn", "category": "AI/ML" },
+      { "name": "Pandas", "category": "Data" },
+      { "name": "NumPy", "category": "Data" },
+      { "name": "PySpark", "category": "Data" },
+      { "name": "Hugging Face Transformers", "category": "AI/ML" },
+      { "name": "Power BI", "category": "Data" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "Hadoop", "category": "Big Data" },
+      { "name": "Hive", "category": "Big Data" },
+      { "name": "Angular", "category": "Front-End" },
+      { "name": "SQL Server", "category": "Database" },
+      { "name": "Jira", "category": "Project Management" }
+    ],
+    "experiences": [
+      {
+        "company": "Recruit.AI Maroc",
+        "role": "Data Scientist – Intelligence Artificielle (Stage PFE)",
+        "description": "Collected, cleaned, and processed multi-format data. Developed a recommendation system for recruitment matching.",
+        "startDate": "February 2025",
+        "endDate": null
+      },
+      {
+        "company": "Ai 2MAG Marketing",
+        "role": "Développement Web et Marketing Digital (Stage PFE)",
+        "description": "Designed and developed a responsive website. Optimized SEO and managed social networks.",
+        "startDate": "April 2023",
+        "endDate": "June 2023"
+      }
+    ],
+    "projects": [
+      { "name": "Detection of Drug Side Effects", "description": "Tool to identify adverse drug effects from textual data for pharmacovigilance." },
+      { "name": "Brain Tumor Segmentation with 3D U-Net", "description": "Flask web application for automatic segmentation of brain tumors from MRI images." },
+      { "name": "Arabic Handwritten Text Detection", "description": "Arabic OCR system using YOLO for text area detection." },
+      { "name": "Fraud Detection with XGBoost & PySpark", "description": "Fraud detection system for online transactions using machine learning on 6 million transactions." }
+    ],
+    "education": [
+      { "school": "Faculté des Sciences Meknès", "degree": "Master en Intelligence Artificielle et Analyse de Données", "startDate": "October 2023" },
+      { "school": "Faculté des Sciences et Techniques Settat", "degree": "Licence en Système d'Information et Transformation Digitale", "startDate": "September 2022", "endDate": "July 2023" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-ibtissam",
+    "name": "IBTISSAM KHANNIJ",
+    "email": "ibtissamkhannij@gmail.com",
+    "phone": "212 701-750656",
+    "role": "AI Developer - CVS Service SQL Model",
+    "domain": "Data Science and Artificial Intelligence",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Ibtissam_Khannij/profile.png",
+    "cvPath": "/profiles/Ibtissam_Khannij/cv.pdf",
+    "github": "https://github.com/Ibtissam21-b",
+    "linkedin": "https://www.linkedin.com/in/ibtissam-khannij-4095382a6/",
+    "joinedAt": "2024-10-01",
+    "description": "Étudiante en Master Data Science & Intelligence Artificielle. Passionnée par l'analyse de données et le développement de solutions intelligentes.",
+    "skills": [
+      { "name": "Python", "category": "Programming" },
+      { "name": "Flutter/Dart", "category": "Mobile" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "API REST", "category": "Back-End" },
+      { "name": "SQL/NoSQL", "category": "Database" },
+      { "name": "Scikit-learn", "category": "AI/ML" },
+      { "name": "PyTorch", "category": "AI/ML" },
+      { "name": "Power BI", "category": "Data" },
+      { "name": "OpenCV", "category": "AI/ML" },
+      { "name": "Streamlit", "category": "Data" },
+      { "name": "Selenium/BeautifulSoup", "category": "Data" },
+      { "name": "React/Vite", "category": "Front-End" }
+    ],
+    "experiences": [],
+    "projects": [
+      { "name": "Restaurant System with Online Ordering", "description": "Conception et réalisation d'un système de restaurant avec commande en ligne utilisant Java." },
+      { "name": "Marine Corrosion Classification", "description": "Classification d'images de corrosion avec CNN (ResNet, MobileNet)." },
+      { "name": "UK Road Accidents Analysis", "description": "Dashboard interactif avec Power BI pour l'analyse des accidents routiers." },
+      { "name": "Job Market Analysis", "description": "Scraping LinkedIn avec extraction des métiers et compétences." },
+      { "name": "Diabetes Prediction", "description": "Application de prédiction du diabète avec Machine Learning." },
+      { "name": "Arabic Language Learning App", "description": "Application mobile d'apprentissage de la langue arabe avec Flutter/Dart." }
+    ],
+    "education": [
+      { "school": "Université Mundiapolis de Casablanca", "degree": "Master 1 en Data Science et Intelligence Artificielle", "startDate": "2023" },
+      { "school": "Faculté Polydisciplinaire de Taza", "degree": "Licence en génie informatique", "startDate": "2020", "endDate": "2023" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-khadija",
+    "name": "KHADIJA ANHAYFOU",
+    "email": "khadijaanhayfou2@gmail.com",
+    "phone": "212 614-739204",
+    "role": "Front-end Developer - CVS Service",
+    "domain": "Front-End Development",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Khadija_Anhayfou/profile.png",
+    "cvPath": "/profiles/Khadija_Anhayfou/cv.pdf",
+    "github": "https://github.com/kanhay",
+    "linkedin": "https://www.linkedin.com/in/khadija-anhayfou-09872796/",
+    "portfolio": "https://kanhayfou.vercel.app/",
+    "joinedAt": "2024-10-01",
+    "description": "1337 student with a solid foundation in software design, development, and testing. Looking to apply growing skills and knowledge in front-end development.",
+    "skills": [
+      { "name": "C", "category": "Programming" },
+      { "name": "C++", "category": "Programming" },
+      { "name": "JavaScript", "category": "Front-End" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "HTML/CSS", "category": "Front-End" },
+      { "name": "React", "category": "Front-End" },
+      { "name": "Django", "category": "Back-End" },
+      { "name": "Django Rest Framework", "category": "Back-End" },
+      { "name": "Figma", "category": "Design" },
+      { "name": "Git", "category": "DevOps" },
+      { "name": "Docker", "category": "DevOps" },
+      { "name": "Linux", "category": "DevOps" },
+      { "name": "PostgreSQL", "category": "Database" }
+    ],
+    "experiences": [],
+    "projects": [
+      { "name": "Ft transcendence", "description": "Real-time communication server in Python with WebSocket support and scalable client-server architecture." },
+      { "name": "Ft irc", "description": "Fully functional IRC server in C++ for real-time communication." },
+      { "name": "Minishell", "description": "Custom C shell mimicking Unix functionalities including command execution and input parsing." }
+    ],
+    "education": [
+      { "school": "UM6P - 1337 Coding School (42 Network)", "degree": "Software Engineering Curriculum", "startDate": "2022" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-nisrine",
+    "name": "NISRINE AMROUG",
+    "email": "nisrineamroug2005prof@gmail.com",
+    "phone": "212 663-374378",
+    "role": "Getea Service Lead",
+    "domain": "Front-End Development",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Nisrine_Amroug/profile.png",
+    "cvPath": "/profiles/Nisrine_Amroug/cv.pdf",
+    "github": "https://github.com/nisrineamroug",
+    "linkedin": "https://www.linkedin.com/in/nisrine-amroug-55bb0034b/",
+    "joinedAt": "2024-10-01",
+    "description": "1337 student with a solid foundation in software design, development, and testing. Looking to apply skills in front-end development through hands-on internship.",
+    "skills": [
+      { "name": "C", "category": "Programming" },
+      { "name": "C++", "category": "Programming" },
+      { "name": "JavaScript", "category": "Front-End" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "HTML/CSS", "category": "Front-End" },
+      { "name": "React", "category": "Front-End" },
+      { "name": "Django", "category": "Back-End" },
+      { "name": "Django Rest Framework", "category": "Back-End" },
+      { "name": "Figma", "category": "Design" },
+      { "name": "Git", "category": "DevOps" },
+      { "name": "Docker", "category": "DevOps" },
+      { "name": "Linux", "category": "DevOps" },
+      { "name": "PostgreSQL", "category": "Database" }
+    ],
+    "experiences": [],
+    "projects": [
+      { "name": "Ft transcendence", "description": "Real-time communication server in Python with WebSocket support." },
+      { "name": "Ft irc", "description": "Fully functional IRC server in C++ for real-time communication and messaging." },
+      { "name": "Minishell", "description": "Custom C shell mimicking Unix shell functionalities." }
+    ],
+    "education": [
+      { "school": "UM6P - 1337 Coding School (42 Network)", "degree": "Curriculum in Software Engineering", "startDate": "Oct 2022" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  },
+  {
+    "id": "member-wafae",
+    "name": "WAFAE ELKARI",
+    "email": "wafae2004elkari@gmail.com",
+    "phone": "212 663-054873",
+    "role": "Data Developer - Data Warehouse & CVS Service",
+    "domain": "Ingénierie Informatique et Management des Systèmes",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Wafae_El_Kari/profile.png",
+    "cvPath": "/profiles/Wafae_El_Kari/cv.pdf",
+    "github": "https://github.com/Wafae-el",
+    "linkedin": "https://www.linkedin.com/in/wafae-e-630167264/",
+    "joinedAt": "2024-10-01",
+    "description": "Étudiante en première année de Génie Informatique et Management des Systèmes, passionnée par l'analyse de données, l'IA et le développement.",
+    "skills": [
+      { "name": "SQL/MySQL", "category": "Database" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "MATLAB", "category": "Programming" },
+      { "name": "Excel", "category": "Data" },
+      { "name": "Power BI", "category": "Data" },
+      { "name": "C++", "category": "Programming" },
+      { "name": "R", "category": "Programming" },
+      { "name": "HTML/CSS", "category": "Front-End" },
+      { "name": "Windows/Linux Admin", "category": "DevOps" }
+    ],
+    "experiences": [
+      {
+        "company": "Bénévolat – Classe préparatoire",
+        "role": "Étudiante Bénévole",
+        "description": "Partage de connaissances pour aider les étudiants à choisir leur parcours académique.",
+        "startDate": "April 2023",
+        "endDate": null
+      }
+    ],
+    "projects": [
+      { "name": "Statistical Analysis App with Streamlit", "description": "Application Python pour la visualisation et l'interprétation des données." },
+      { "name": "NLP Parts of Speech Recognition", "description": "Application des techniques NLP pour analyser des données textuelles." },
+      { "name": "Emotion Recognition from Speech", "description": "Projet de reconnaissance des émotions utilisant Python." },
+      { "name": "Regional Sales Analysis with Power BI", "description": "Analyse de vente régionale avec Power BI." },
+      { "name": "Anomaly Detection with SVM", "description": "Détection d'anomalies avec un SVM en Python." },
+      { "name": "Personal Portfolio Website", "description": "Site portfolio en HTML, CSS et JavaScript." }
+    ],
+    "education": [
+      { "school": "ESITH Casablanca", "degree": "Programme d'ingénierie", "startDate": "2024" },
+      { "school": "Errazi, El Jadida", "degree": "Classes préparatoires", "startDate": "2022", "endDate": "2024" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" },
+      { "name": "Spanish", "level": "A1" }
+    ]
+  },
+  {
+    "id": "member-yasser",
+    "name": "YASSER TOUIL",
+    "email": "touilyasser123@gmail.com",
+    "phone": "212 701-270954",
+    "role": "Front-end Developer - CVS Service",
+    "domain": "Full-stack Development",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Yasser_Touil/profile.png",
+    "cvPath": "/profiles/Yasser_Touil/cv.pdf",
+    "github": "https://github.com/touilYasser",
+    "linkedin": "https://www.linkedin.com/in/yasser-touil-02a7b12b0/",
+    "joinedAt": "2024-10-01",
+    "description": "Full-stack developer and Computer and Network Engineering student, currently seeking a 1-2 month PFA internship.",
+    "skills": [
+      { "name": "JavaScript", "category": "Front-End" },
+      { "name": "TypeScript", "category": "Front-End" },
+      { "name": "React.js", "category": "Front-End" },
+      { "name": "Tailwind CSS", "category": "Front-End" },
+      { "name": "Bootstrap", "category": "Front-End" },
+      { "name": "Python", "category": "Programming" },
+      { "name": "PHP", "category": "Back-End" },
+      { "name": "Laravel", "category": "Back-End" },
+      { "name": "Django", "category": "Back-End" },
+      { "name": "Express.js", "category": "Back-End" },
+      { "name": "C++", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "MySQL", "category": "Database" },
+      { "name": "MongoDB", "category": "Database" },
+      { "name": "SQL Server", "category": "Database" },
+      { "name": "Git/GitHub", "category": "DevOps" },
+      { "name": "UML Modeling", "category": "Design" }
+    ],
+    "experiences": [
+      {
+        "company": "E&M Partners Rabat",
+        "role": "Stagiaire Full Stack Developer",
+        "description": "Implemented interactive and responsive user interfaces, improving code quality and integrating reusable components.",
+        "startDate": "Feb 2024",
+        "endDate": "Mar 2024"
+      }
+    ],
+    "projects": [
+      { "name": "Note Management Web Application", "description": "Backend architecture with organized JSON document storage and REST API for CRUD operations." },
+      { "name": "Library Book Reservation Management", "description": "Secure authentication and role management system with intuitive interface for reservation tracking." }
+    ],
+    "education": [
+      { "school": "EMSI Rabat", "degree": "Ingenieur en Informatique et Réseaux", "startDate": "Oct 2024" },
+      { "school": "ISTAG Yaacoub EL Mansour Rabat", "degree": "Technicien Spécialisé en Développement Full Stack", "startDate": "Sep 2022", "endDate": "Jun 2024" }
+    ],
+    "languages": [
+      { "name": "French", "level": "C1" },
+      { "name": "Arabic", "level": "Native" },
+      { "name": "English", "level": "B2" }
+    ]
+  }
+]

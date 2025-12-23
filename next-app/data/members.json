@@ -1,0 +1,36 @@
+[
+  {
+    "id": "member-alae",
+    "name": "ACHEACHE ALAA EDDINE",
+    "email": "alaedineacheache@gmail.com",
+    "phone": "212 623-909851",
+    "role": "Back-end Developer - CVS Service",
+    "domain": "Fullstack Web Development",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Alae_Eddine_Acheache/profile.png",
+    "cvPath": "/profiles/Alae_Eddine_Acheache/cv.pdf",
+    "github": "https://github.com/ALAAEddineACHEACHE",
+    "linkedin": "https://www.linkedin.com/in/alaaeddine-acheache/",
+    "joinedAt": "2024-10-01",
+    "description": "Fullstack Web Development Engineering student, passionate about web development with Spring Boot and microservices."
+  },
+  {
+    "id": "member-amal",
+    "name": "AMAL LASTAK",
+    "email": "amallastak891@gmail.com",
+    "phone": "212 612-124695",
+    "role": "AI Developer - Email Classification & CVS Service",
+    "domain": "Intelligence Artificielle et Robotique",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "profileImage": "/profiles/Amal_Lastak/profile.png",
+    "cvPath": "/profiles/Amal_Lastak/cv.pdf",
+    "github": "https://github.com/amallastak",
+    "linkedin": "https://www.linkedin.com/in/amal-lastak/",
+    "joinedAt": "2024-10-01",
+    "description": "Ingénieure en IA passionnée par le ML/DL, spécialisée en NLP et Computer Vision."
+  }
+]
