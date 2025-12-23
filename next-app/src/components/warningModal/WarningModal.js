@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { X, AlertTriangle } from 'lucide-react';
+import { X, AlertTriangle, Upload, FileText, Trash2 } from 'lucide-react';
 import { WarningCounter } from '@/components/warningBadge/WarningBadge';
+import { useEnvironment } from '@/hooks/useEnvironment';
 import './WarningModal.css';
 
 /**
@@ -16,28 +17,61 @@ export default function WarningModal({
   isLoading = false 
 }) {
   const [reason, setReason] = useState('');
+  const [proofFile, setProofFile] = useState(null);
   const [error, setError] = useState('');
+  const { isProduction } = useEnvironment();
 
   if (!isOpen || !member) return null;
 
   const newWarningCount = member.warningCount + 1;
   const willBeDropped = newWarningCount >= 3;
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Validate file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        setError('File size must be less than 5MB');
+        return;
+      }
+      // Validate file type
+      const allowedTypes = ['application/pdf', 'image/png', 'image/jpeg', 'image/jpg'];
+      if (!allowedTypes.includes(file.type)) {
+        setError('Only PDF, PNG, and JPG files are allowed');
+        return;
+      }
+      setProofFile(file);
+      setError('');
+    }
+  };
+
+  const removeFile = () => {
+    setProofFile(null);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     
+    if (isProduction) {
+      setError('Write operations are disabled in production mode');
+      return;
+    }
+
     if (!reason.trim()) {
       setError('Please provide a reason for the warning');
       return;
     }
 
-    onConfirm(member.id, reason);
+    // Pass file along with the warning data
+    onConfirm(member.id, reason, proofFile);
     setReason('');
+    setProofFile(null);
     setError('');
   };
 
   const handleClose = () => {
     setReason('');
+    setProofFile(null);
     setError('');
     onClose();
   };
@@ -54,6 +88,14 @@ export default function WarningModal({
             <X size={20} />
           </button>
         </div>
+
+        {/* Production Mode Banner */}
+        {isProduction && (
+          <div className="production-banner">
+            <AlertTriangle size={16} />
+            <span>Read-only mode - Write operations disabled in production</span>
+          </div>
+        )}
 
         <form onSubmit={handleSubmit}>
           <div className="modal-body">
@@ -104,17 +146,60 @@ export default function WarningModal({
               </label>
               <textarea
                 id="warning-reason"
-                className={`form-input form-textarea ${error ? 'error' : ''}`}
+                className={`form-input form-textarea ${error && !reason.trim() ? 'error' : ''}`}
                 placeholder="Describe the reason for issuing this warning..."
                 value={reason}
                 onChange={(e) => {
                   setReason(e.target.value);
-                  setError('');
+                  if (error && e.target.value.trim()) setError('');
                 }}
                 rows={4}
+                disabled={isProduction}
               />
-              {error && <span className="form-error">{error}</span>}
             </div>
+
+            {/* Proof Document Upload */}
+            <div className="form-group">
+              <label className="form-label">
+                Proof Document (Optional)
+              </label>
+              <p className="form-hint">Upload evidence supporting this warning (PDF, PNG, JPG - max 5MB)</p>
+              
+              {!proofFile ? (
+                <label className={`file-upload-area ${isProduction ? 'disabled' : ''}`}>
+                  <input
+                    type="file"
+                    accept=".pdf,.png,.jpg,.jpeg"
+                    onChange={handleFileChange}
+                    className="file-input-hidden"
+                    disabled={isProduction}
+                  />
+                  <Upload size={24} />
+                  <span>Click to upload or drag and drop</span>
+                  <span className="file-types">PDF, PNG, or JPG</span>
+                </label>
+              ) : (
+                <div className="file-preview">
+                  <div className="file-info">
+                    <FileText size={20} />
+                    <div className="file-details">
+                      <span className="file-name">{proofFile.name}</span>
+                      <span className="file-size">{(proofFile.size / 1024).toFixed(1)} KB</span>
+                    </div>
+                  </div>
+                  <button 
+                    type="button" 
+                    className="file-remove" 
+                    onClick={removeFile}
+                    disabled={isProduction}
+                  >
+                    <Trash2 size={16} />
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {error && <span className="form-error">{error}</span>}
 
             {/* New Status Preview */}
             <div className="warning-preview">
@@ -139,10 +224,11 @@ export default function WarningModal({
             </button>
             <button 
               type="submit" 
-              className={`btn ${willBeDropped ? 'btn-danger' : 'btn-warning'}`}
-              disabled={isLoading}
+              className={`btn ${willBeDropped ? 'btn-danger' : 'btn-warning'} ${isProduction ? 'btn-disabled' : ''}`}
+              disabled={isLoading || isProduction}
+              title={isProduction ? 'Read-only mode - Write operations disabled' : ''}
             >
-              {isLoading ? 'Processing...' : willBeDropped ? 'Drop Member' : 'Issue Warning'}
+              {isLoading ? 'Processing...' : isProduction ? 'Read-Only Mode' : willBeDropped ? 'Drop Member' : 'Issue Warning'}
             </button>
           </div>
         </form>

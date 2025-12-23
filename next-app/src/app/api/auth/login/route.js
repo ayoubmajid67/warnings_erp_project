@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { findUserByEmail, getSessionDuration, USER_ROLES } from '@/app/db/users';
 import { findMemberById } from '@/app/db/members';
+import { hashPassword } from '@/utils/hash';
 import jwt from 'jsonwebtoken';
 
 export async function POST(request) {
@@ -18,7 +19,10 @@ export async function POST(request) {
         // Find user
         const user = findUserByEmail(email);
 
-        if (!user || user.password !== password) {
+        // Hash the input password and compare with stored hash
+        const hashedInputPassword = hashPassword(password);
+        
+        if (!user || user.password !== hashedInputPassword) {
             return new NextResponse(
                 JSON.stringify({ message: 'Invalid credentials' }),
                 { status: 401, headers: { 'Content-Type': 'application/json' } }

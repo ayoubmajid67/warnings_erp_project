@@ -9,12 +9,14 @@ import MemberCard from '@/components/memberCard/MemberCard';
 import WarningModal from '@/components/warningModal/WarningModal';
 import { NotificationBell } from '@/components/notificationPanel/NotificationPanel';
 import NotificationPanel from '@/components/notificationPanel/NotificationPanel';
+import { useEnvironment } from '@/hooks/useEnvironment';
 import { Users, AlertTriangle, UserCheck, UserX, TrendingUp } from 'lucide-react';
 import './admin.css';
 
 export default function AdminDashboard() {
   const router = useRouter();
   const { user, isAdmin, getToken } = useContext(AuthContext);
+  const { isProduction } = useEnvironment();
   
   const [members, setMembers] = useState([]);
   const [stats, setStats] = useState({ total: 0, active: 0, dropped: 0, atRisk: 0 });
@@ -262,6 +264,7 @@ export default function AdminDashboard() {
                     key={member.id}
                     member={member}
                     onIssueWarning={handleIssueWarning}
+                    isReadOnly={isProduction}
                   />
                 ))}
               </div>

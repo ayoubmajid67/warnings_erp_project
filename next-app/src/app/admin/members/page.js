@@ -6,6 +6,7 @@ import { AuthContext } from '@/providers/AuthProvider';
 import Sidebar from '@/components/sidebar/Sidebar';
 import MemberCard, { MemberRow } from '@/components/memberCard/MemberCard';
 import WarningModal from '@/components/warningModal/WarningModal';
+import { useEnvironment } from '@/hooks/useEnvironment';
 import { Search, Filter, Grid, List } from 'lucide-react';
 import '../admin.css';
 import './members.css';
@@ -13,6 +14,7 @@ import './members.css';
 export default function MembersPage() {
   const router = useRouter();
   const { isAdmin, getToken } = useContext(AuthContext);
+  const { isProduction } = useEnvironment();
   
   const [members, setMembers] = useState([]);
   const [filteredMembers, setFilteredMembers] = useState([]);
@@ -231,6 +233,7 @@ export default function MembersPage() {
                   key={member.id}
                   member={member}
                   onIssueWarning={handleIssueWarning}
+                  isReadOnly={isProduction}
                 />
               ))}
             </div>
@@ -253,6 +256,7 @@ export default function MembersPage() {
                       member={member}
                       onIssueWarning={handleIssueWarning}
                       onViewProfile={handleViewProfile}
+                      isReadOnly={isProduction}
                     />
                   ))}
                 </tbody>

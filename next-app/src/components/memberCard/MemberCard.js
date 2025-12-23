@@ -13,7 +13,8 @@ export default function MemberCard({
   member, 
   onIssueWarning,
   showActions = true,
-  variant = 'default' // 'default' | 'compact' | 'detailed'
+  variant = 'default', // 'default' | 'compact' | 'detailed'
+  isReadOnly = false // When true, disables write actions
 }) {
   const { 
     id, 
@@ -110,11 +111,13 @@ export default function MemberCard({
           </Link>
           {canIssueWarning && (
             <button 
-              className="btn btn-warning btn-sm"
-              onClick={() => onIssueWarning?.(member)}
+              className={`btn btn-warning btn-sm ${isReadOnly ? 'btn-disabled' : ''}`}
+              onClick={() => !isReadOnly && onIssueWarning?.(member)}
+              disabled={isReadOnly}
+              title={isReadOnly ? 'Read-only mode - Write operations disabled' : 'Issue Warning'}
             >
               <AlertTriangle size={14} />
-              Issue Warning
+              {isReadOnly ? 'Read-Only' : 'Issue Warning'}
             </button>
           )}
         </div>
@@ -126,7 +129,7 @@ export default function MemberCard({
 /**
  * MemberRow - Table row variant for member listing
  */
-export function MemberRow({ member, onIssueWarning, onViewProfile }) {
+export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = false }) {
   const isDropped = member.status === 'dropped';
   const canIssueWarning = !isDropped && member.warningCount < 3;
 
@@ -175,9 +178,10 @@ export function MemberRow({ member, onIssueWarning, onViewProfile }) {
           </button>
           {canIssueWarning && (
             <button 
-              className="btn btn-ghost btn-icon"
-              onClick={() => onIssueWarning?.(member)}
-              title="Issue Warning"
+              className={`btn btn-ghost btn-icon ${isReadOnly ? 'btn-disabled' : ''}`}
+              onClick={() => !isReadOnly && onIssueWarning?.(member)}
+              disabled={isReadOnly}
+              title={isReadOnly ? 'Read-only mode' : 'Issue Warning'}
             >
               <AlertTriangle size={16} />
             </button>

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "admin-1",
+    "username": "Admin",
+    "email": "admin@erp.com",
+    "password": "ede9442d196a172a260253f50e7bda94c8223875eccbf758e1be7a05f67beaa9",
+    "role": "admin",
+    "memberId": null,
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-alae",
+    "username": "Alae Eddine Acheache",
+    "email": "alaedineacheache@gmail.com",
+    "password": "7aa665f71d431e32ebe53ebe6d5fbad39e4acd1f9588123ca143e11ff6581c49",
+    "role": "user",
+    "memberId": "member-alae",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-amal",
+    "username": "Amal Lastak",
+    "email": "amallastak891@gmail.com",
+    "password": "2ce94f3b4284eee875fcb9843ff062500caaefbb56e3e436e744a15982665a61",
+    "role": "user",
+    "memberId": "member-amal",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-amine",
+    "username": "Amine Charro",
+    "email": "amine_charro@yahoo.com",
+    "password": "87fb804585068eb07adbc71f62d34f5fc2c1cee9a25db45945175ca79f6eb79f",
+    "role": "user",
+    "memberId": "member-amine",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-ayman",
+    "username": "Ayman El Hilali",
+    "email": "aymanelhilali658@gmail.com",
+    "password": "3fc2b540bf2a46c39a7ad9f22f9db2638b2b0fdf6a3a2d57b9fb2d56e1f95c4a",
+    "role": "user",
+    "memberId": "member-ayman",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-brahim",
+    "username": "Brahim Bouaz",
+    "email": "brahim.bouaz@uit.ac.ma",
+    "password": "7a9b96c46063a124b63e04946380472fdd7032f846622a40427f09c4d58faa2b",
+    "role": "user",
+    "memberId": "member-brahim",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-sana",
+    "username": "El Fahim Sana",
+    "email": "elfahimel@gmail.com",
+    "password": "bff74f9fd9674e847d5ca8d9cfd0f27eac35958aec39c54a6b4999249786ade5",
+    "role": "user",
+    "memberId": "member-sana",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-ibtissam",
+    "username": "Ibtissam Khannij",
+    "email": "ibtissamkhannij@gmail.com",
+    "password": "e7d43e0464f6261fd1a5403738e630cd97dca064f18deb6741219af1f370cd50",
+    "role": "user",
+    "memberId": "member-ibtissam",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-khadija",
+    "username": "Khadija Anhayfou",
+    "email": "khadijaanhayfou2@gmail.com",
+    "password": "9ba2b9f76ca0cbb03173517277e9b9c4caf3fb4696863b86d8c361c5fd6576cd",
+    "role": "user",
+    "memberId": "member-khadija",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-nisrine",
+    "username": "Nisrine Amroug",
+    "email": "nisrineamroug2005prof@gmail.com",
+    "password": "2b0167cbcf719d21ed9bda942121f7621b04f10994a48bced8b5996d6db7100b",
+    "role": "user",
+    "memberId": "member-nisrine",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-wafae",
+    "username": "Wafae Elkari",
+    "email": "wafae2004elkari@gmail.com",
+    "password": "b42c9d47ad0db262edca257984fecb2e949f1d769d3af6391f7e676cc93320a6",
+    "role": "user",
+    "memberId": "member-wafae",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "user-yasser",
+    "username": "Yasser Touil",
+    "email": "touilyasser123@gmail.com",
+    "password": "2a6626b045171eb44628208eb8d199732f198e81e597a64eb3c30fea2d5e89a7",
+    "role": "user",
+    "memberId": "member-yasser",
+    "createdAt": "2024-10-01T00:00:00.000Z"
+  }
+]
