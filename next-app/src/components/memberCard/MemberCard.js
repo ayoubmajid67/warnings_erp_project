@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { WarningCounter, StatusBadge } from '@/components/warningBadge/WarningBadge';
-import { AlertTriangle, Eye, Mail, Phone, ExternalLink } from 'lucide-react';
+import { AlertTriangle, Eye, Mail, Phone, ExternalLink, Trash2 } from 'lucide-react';
 import './MemberCard.css';
 
 /**
@@ -129,12 +129,13 @@ export default function MemberCard({
 /**
  * MemberRow - Table row variant for member listing
  */
-export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = false }) {
+export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = false, showDisableAction = false, onDisable }) {
   const isDropped = member.status === 'dropped';
-  const canIssueWarning = !isDropped && member.warningCount < 3;
+  const isDisabled = member.status === 'disabled';
+  const canIssueWarning = !isDropped && !isDisabled && member.warningCount < 3;
 
   return (
-    <tr className={isDropped ? 'row-dropped' : ''}>
+    <tr className={`${isDropped ? 'row-dropped' : ''} ${isDisabled ? 'row-disabled' : ''}`}>
       <td>
         <div className="member-cell">
           <div className="member-avatar-sm">
@@ -184,6 +185,15 @@ export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = 
               title={isReadOnly ? 'Read-only mode' : 'Issue Warning'}
             >
               <AlertTriangle size={16} />
+            </button>
+          )}
+          {showDisableAction && !isDisabled && (
+            <button 
+              className="btn btn-ghost btn-icon btn-danger"
+              onClick={() => onDisable?.()}
+              title="Disable Member"
+            >
+              <Trash2 size={16} />
             </button>
           )}
         </div>

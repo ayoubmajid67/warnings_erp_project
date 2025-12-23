@@ -179,6 +179,22 @@ export const deleteMember = (id) => {
   return true;
 };
 
+/**
+ * Disable a member (soft delete - sets status to 'disabled')
+ */
+export const disableMember = (id) => {
+  members = loadMembers();
+  
+  const index = members.findIndex(member => member.id === id);
+  if (index === -1) return false;
+  
+  members[index].status = 'disabled';
+  members[index].disabledAt = new Date().toISOString();
+  saveMembers(members);
+  
+  return members[index];
+};
+
 // ============== Warning System ==============
 
 /**
