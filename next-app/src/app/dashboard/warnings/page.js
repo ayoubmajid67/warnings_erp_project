@@ -25,27 +25,27 @@ export default function MemberWarningsPage() {
 
   // Fetch member's warning data
   useEffect(() => {
+    const fetchWarnings = async () => {
+      try {
+        const response = await fetch(`/api/members/${user.memberId}`, {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setMember(data.member);
+        }
+      } catch (err) {
+        console.error('Failed to fetch warnings:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (!isAdmin && user?.memberId) {
       fetchWarnings();
     }
-  }, [isAdmin, user]);
-
-  const fetchWarnings = async () => {
-    try {
-      const response = await fetch(`/api/members/${user.memberId}`, {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        setMember(data.member);
-      }
-    } catch (err) {
-      console.error('Failed to fetch warnings:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [isAdmin, user, getToken]);
 
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -156,7 +156,7 @@ export default function MemberWarningsPage() {
                   <div className="no-warnings">
                     <AlertTriangle size={40} strokeWidth={1} />
                     <h3>No Warnings</h3>
-                    <p>You haven't received any warnings yet. Keep it up!</p>
+                    <p>You haven&apos;t received any warnings yet. Keep it up!</p>
                   </div>
                 )}
               </div>

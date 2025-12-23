@@ -31,30 +31,46 @@ export default function UserDashboard() {
 
   // Fetch member data and notifications
   useEffect(() => {
+    const fetchMemberData = async () => {
+      try {
+        const response = await fetch(`/api/members/${user.memberId}`, {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (!response.ok) throw new Error('Failed to fetch member data');
+        
+        const data = await response.json();
+        setMemberData(data.member);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchNotifications = async () => {
+      try {
+        const response = await fetch('/api/notifications', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setNotifications(data.notifications);
+        }
+      } catch (err) {
+        console.error('Failed to fetch notifications:', err);
+      }
+    };
+
     if (isUser && user?.memberId) {
       fetchMemberData();
       fetchNotifications();
     }
-  }, [isUser, user]);
+  }, [isUser, user, getToken]);
 
-  const fetchMemberData = async () => {
-    try {
-      const response = await fetch(`/api/members/${user.memberId}`, {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (!response.ok) throw new Error('Failed to fetch member data');
-      
-      const data = await response.json();
-      setMemberData(data.member);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchNotifications = async () => {
+  // Refresh function for notifications (used in handlers)
+  const fetchNotificationsRefresh = async () => {
     try {
       const response = await fetch('/api/notifications', {
         headers: { Authorization: `Bearer ${getToken()}` }
@@ -79,7 +95,7 @@ export default function UserDashboard() {
         },
         body: JSON.stringify({ notificationId })
       });
-      await fetchNotifications();
+      await fetchNotificationsRefresh();
     } catch (err) {
       console.error('Failed to mark as read:', err);
     }

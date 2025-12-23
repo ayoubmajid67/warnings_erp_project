@@ -43,27 +43,27 @@ export default function ViewMemberProfilePage() {
 
   // Fetch member data
   useEffect(() => {
+    const fetchMember = async () => {
+      try {
+        const response = await fetch(`/api/members/${params.id}`, {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (!response.ok) throw new Error('Failed to fetch member');
+        
+        const data = await response.json();
+        setMember(data.member);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (!isAdmin && params.id) {
       fetchMember();
     }
-  }, [isAdmin, params.id]);
-
-  const fetchMember = async () => {
-    try {
-      const response = await fetch(`/api/members/${params.id}`, {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (!response.ok) throw new Error('Failed to fetch member');
-      
-      const data = await response.json();
-      setMember(data.member);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [isAdmin, params.id, getToken]);
 
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('en-US', {

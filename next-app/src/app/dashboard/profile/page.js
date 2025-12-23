@@ -35,44 +35,44 @@ export default function MemberProfilePage() {
 
   // Fetch member data
   useEffect(() => {
+    const fetchMemberData = async () => {
+      try {
+        const response = await fetch(`/api/members/${user.memberId}`, {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setMember(data.member);
+        }
+      } catch (err) {
+        console.error('Failed to fetch member:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchAllMembers = async () => {
+      try {
+        const response = await fetch('/api/members', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          // Filter out current member
+          setAllMembers(data.members.filter(m => m.id !== user.memberId));
+        }
+      } catch (err) {
+        console.error('Failed to fetch members:', err);
+      }
+    };
+
     if (!isAdmin && user?.memberId) {
       fetchMemberData();
       fetchAllMembers();
     }
-  }, [isAdmin, user]);
-
-  const fetchMemberData = async () => {
-    try {
-      const response = await fetch(`/api/members/${user.memberId}`, {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        setMember(data.member);
-      }
-    } catch (err) {
-      console.error('Failed to fetch member:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchAllMembers = async () => {
-    try {
-      const response = await fetch('/api/members', {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        // Filter out current member
-        setAllMembers(data.members.filter(m => m.id !== user.memberId));
-      }
-    } catch (err) {
-      console.error('Failed to fetch members:', err);
-    }
-  };
+  }, [isAdmin, user, getToken]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';

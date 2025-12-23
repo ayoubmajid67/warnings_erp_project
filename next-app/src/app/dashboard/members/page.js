@@ -27,28 +27,28 @@ export default function DashboardMembersPage() {
 
   // Fetch members
   useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const response = await fetch('/api/members', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          // Filter to show only active members (not dropped)
+          setMembers(data.members.filter(m => m.status === 'active'));
+        }
+      } catch (err) {
+        console.error('Failed to fetch members:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (!isAdmin) {
       fetchMembers();
     }
-  }, [isAdmin]);
-
-  const fetchMembers = async () => {
-    try {
-      const response = await fetch('/api/members', {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        // Filter to show only active members (not dropped)
-        setMembers(data.members.filter(m => m.status === 'active'));
-      }
-    } catch (err) {
-      console.error('Failed to fetch members:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [isAdmin, getToken]);
 
   const filteredMembers = members.filter(member =>
     member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

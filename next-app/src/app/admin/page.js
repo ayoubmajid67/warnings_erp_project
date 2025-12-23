@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { AuthContext } from '@/providers/AuthProvider';
 import Sidebar from '@/components/sidebar/Sidebar';
 import MemberCard from '@/components/memberCard/MemberCard';
@@ -35,15 +36,50 @@ export default function AdminDashboard() {
     }
   }, [isAdmin, router]);
 
-  // Fetch members
+  // Fetch members and notifications
   useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const response = await fetch('/api/members', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (!response.ok) throw new Error('Failed to fetch members');
+        
+        const data = await response.json();
+        setMembers(data.members);
+        setStats(data.stats);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchNotifications = async () => {
+      try {
+        const response = await fetch('/api/notifications', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setNotifications(data.notifications);
+          setUnreadCount(data.unreadCount);
+        }
+      } catch (err) {
+        console.error('Failed to fetch notifications:', err);
+      }
+    };
+
     if (isAdmin) {
       fetchMembers();
       fetchNotifications();
     }
-  }, [isAdmin]);
+  }, [isAdmin, getToken]);
 
-  const fetchMembers = async () => {
+  // Refresh functions for use in handlers
+  const fetchMembersRefresh = async () => {
     try {
       const response = await fetch('/api/members', {
         headers: { Authorization: `Bearer ${getToken()}` }
@@ -61,7 +97,7 @@ export default function AdminDashboard() {
     }
   };
 
-  const fetchNotifications = async () => {
+  const fetchNotificationsRefresh = async () => {
     try {
       const response = await fetch('/api/notifications', {
         headers: { Authorization: `Bearer ${getToken()}` }
@@ -100,8 +136,8 @@ export default function AdminDashboard() {
       }
 
       // Refresh data
-      await fetchMembers();
-      await fetchNotifications();
+      await fetchMembersRefresh();
+      await fetchNotificationsRefresh();
       setIsWarningModalOpen(false);
       setSelectedMember(null);
     } catch (err) {
@@ -121,7 +157,7 @@ export default function AdminDashboard() {
         },
         body: JSON.stringify({ notificationId })
       });
-      await fetchNotifications();
+      await fetchNotificationsRefresh();
     } catch (err) {
       console.error('Failed to mark as read:', err);
     }
@@ -137,7 +173,7 @@ export default function AdminDashboard() {
         },
         body: JSON.stringify({ markAll: true })
       });
-      await fetchNotifications();
+      await fetchNotificationsRefresh();
     } catch (err) {
       console.error('Failed to mark all as read:', err);
     }
@@ -205,9 +241,9 @@ export default function AdminDashboard() {
           <section className="section">
             <div className="section-header">
               <h2 className="section-title">Team Members</h2>
-              <a href="/admin/members" className="btn btn-secondary btn-sm">
+              <Link href="/admin/members" className="btn btn-secondary btn-sm">
                 View All
-              </a>
+              </Link>
             </div>
 
             {loading ? (

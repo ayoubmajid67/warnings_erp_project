@@ -48,12 +48,30 @@ export default function MemberProfilePage() {
 
   // Fetch member data
   useEffect(() => {
+    const fetchMember = async () => {
+      try {
+        const response = await fetch(`/api/members/${params.id}`, {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (!response.ok) throw new Error('Failed to fetch member');
+        
+        const data = await response.json();
+        setMember(data.member);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (isAdmin && params.id) {
       fetchMember();
     }
-  }, [isAdmin, params.id]);
+  }, [isAdmin, params.id, getToken]);
 
-  const fetchMember = async () => {
+  // fetchMember function for reuse in handlers
+  const fetchMemberRefresh = async () => {
     try {
       const response = await fetch(`/api/members/${params.id}`, {
         headers: { Authorization: `Bearer ${getToken()}` }
@@ -87,7 +105,7 @@ export default function MemberProfilePage() {
         throw new Error(data.message);
       }
 
-      await fetchMember();
+      await fetchMemberRefresh();
       setIsWarningModalOpen(false);
     } catch (err) {
       alert(err.message);

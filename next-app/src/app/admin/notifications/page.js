@@ -25,27 +25,27 @@ export default function AdminNotificationsPage() {
 
   // Fetch notifications
   useEffect(() => {
+    const fetchNotifications = async () => {
+      try {
+        const response = await fetch('/api/notifications', {
+          headers: { Authorization: `Bearer ${getToken()}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setNotifications(data.notifications);
+        }
+      } catch (err) {
+        console.error('Failed to fetch notifications:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (isAdmin) {
       fetchNotifications();
     }
-  }, [isAdmin]);
-
-  const fetchNotifications = async () => {
-    try {
-      const response = await fetch('/api/notifications', {
-        headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        setNotifications(data.notifications);
-      }
-    } catch (err) {
-      console.error('Failed to fetch notifications:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [isAdmin, getToken]);
 
   const getIcon = (type) => {
     switch (type) {

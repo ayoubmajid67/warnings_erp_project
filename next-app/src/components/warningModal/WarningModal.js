@@ -82,7 +82,7 @@ export default function WarningModal({
                 <AlertTriangle size={20} />
                 <div>
                   <strong>Critical Warning</strong>
-                  <p>This will be the member's 3rd warning. They will be immediately dropped from the team and lose access to the platform.</p>
+                  <p>This will be the member&apos;s 3rd warning. They will be immediately dropped from the team and lose access to the platform.</p>
                 </div>
               </div>
             )}
@@ -92,7 +92,7 @@ export default function WarningModal({
                 <AlertTriangle size={20} />
                 <div>
                   <strong>Final Warning Notice</strong>
-                  <p>This will be the member's 2nd warning. One more warning will result in removal from the team.</p>
+                  <p>This will be the member&apos;s 2nd warning. One more warning will result in removal from the team.</p>
                 </div>
               </div>
             )}
