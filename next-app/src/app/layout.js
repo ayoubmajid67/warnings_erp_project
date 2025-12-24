@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "ERP Team - Warning Management System",
   description: "Team accountability and warning management platform for ERP startup team",
+  icons: {
+    icon: "/assets/logo.png",
+    shortcut: "/assets/logo.png",
+    apple: "/assets/logo.png",
+  },
 };
 
 import AuthProvider from "@/providers/AuthProvider";

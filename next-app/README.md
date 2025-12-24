@@ -1,10 +1,174 @@
 # 🚨 ERP Warning Management System
 
-A modern, full-stack warning management system built for ERP startup teams. This application provides role-based access control, comprehensive warning tracking, email notifications, and activity logging.
+<p align="center">
+  <img src="./public/assets/logo.png" alt="ERP Team Logo" width="120" />
+</p>
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
-![React](https://img.shields.io/badge/React-19-blue?logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)
+<p align="center">
+  <strong>Team Accountability & Warning Management Platform</strong><br/>
+  Built for <a href="https://majjid.com/project.html?project=#intellcap-system">INTELLCAP ERP Solutions</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-19-blue?logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-18+-green?logo=node.js" alt="Node.js" />
+</p>
+
+---
+
+## 🎯 About This Project
+![1766535573665](image/README/1766535573665.png)
+This **Warning Management System** was developed as part of the **INTELLCAP ERP Solutions** project to maintain team accountability, productivity, and professional standards across the organization.
+
+### 💡 Project Vision
+
+We're building a solution to **automate and centralize all internal operations** at INTELLCAP SARL, Filiale Africa/Morocco, INTELLCAP Corp. — from recruitment to project management — using a scalable, modular microservices architecture.
+
+### 🔧 What We're Building (Phase 1)
+
+| Service | Description | Status |
+|---------|-------------|--------|
+| 📄 **CVs Service** | Smart recruitment management system handling 1200+ candidates | In Progress |
+| ⚠️ **Warning System** | Team accountability and warning tracking | ✅ Complete |
+| 📊 **ERP Dashboard** | Centralized management interface | In Progress |
+
+> 🧩 We're currently in the **System Design Phase** of the recruitment module, laying the groundwork for scalability and long-term performance.
+
+---
+
+## 👥 The Team
+
+<table align="center">
+  <tr>
+    <td align="center" colspan="5">
+      <h3>Team Leader</h3>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="5">
+      <img src="./public/profiles/Ayoub_Majjid/profile.png" width="100" style="border-radius: 50%;" alt="Ayoub Majjid" /><br/>
+      <strong>Ayoub Majjid</strong><br/>
+      <sub>Tech Lead & Solution Architect</sub><br/>
+      <a href="https://majjid.com">🌐 majjid.com</a> • <a href="https://github.com/ayoubmajid67">GitHub</a>
+    </td>
+  </tr>
+</table>
+
+### 📊 Team Structure
+
+```
+                           ┌─────────────────────┐
+                           │   AYOUB MAJJID      │
+                           │   Tech Lead &       │
+                           │   Solution Architect│
+                           └──────────┬──────────┘
+                                      │
+        ┌─────────────────────────────┼─────────────────────────────┐
+        │                             │                             │
+        ▼                             ▼                             ▼
+┌───────────────┐           ┌───────────────┐           ┌───────────────┐
+│  Backend Team │           │  AI/ML Team   │           │ Frontend Team │
+└───────┬───────┘           └───────┬───────┘           └───────┬───────┘
+        │                           │                           │
+        ▼                           ▼                           ▼
+   ┌─────────┐               ┌─────────┐                 ┌─────────┐
+   │Alae     │               │Amal     │                 │Wafae    │
+   │Eddine   │               │Lastak   │                 │El Kari  │
+   └─────────┘               └─────────┘                 └─────────┘
+   ┌─────────┐               ┌─────────┐                 ┌─────────┐
+   │Ayman    │               │Nisrine  │                 │Ibtissam │
+   │El Hilali│               │Amroug   │                 │Khannij  │
+   └─────────┘               └─────────┘                 └─────────┘
+   ┌─────────┐               ┌─────────┐                 ┌─────────┐
+   │Brahim   │               │El Fahim │                 │Khadija  │
+   │Bouaz    │               │Sana     │                 │Anhayfou │
+   └─────────┘               └─────────┘                 └─────────┘
+   ┌─────────┐                                          ┌─────────┐
+   │Amine    │                                          │Yasser   │
+   │Charro   │                                          │Touil    │
+   └─────────┘                                          └─────────┘
+```
+
+### 👨‍💻 Team Members
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./public/profiles/Alae_Eddine_Acheache/profile.png" width="60" alt="Alae Eddine" /><br/>
+      <sub>Alae Eddine<br/>Backend</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Amal_Lastak/profile.png" width="60" alt="Amal Lastak" /><br/>
+      <sub>Amal Lastak<br/>AI/ML</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Amine_Charro/profile.png" width="60" alt="Amine Charro" /><br/>
+      <sub>Amine Charro<br/>Backend</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Ayman_El_Hilali/profile.png" width="60" alt="Ayman El Hilali" /><br/>
+      <sub>Ayman El Hilali<br/>DevOps</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Brahim_Bouaz/profile.png" width="60" alt="Brahim Bouaz" /><br/>
+      <sub>Brahim Bouaz<br/>Backend</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./public/profiles/El_Fahim_Sana/profile.png" width="60" alt="El Fahim Sana" /><br/>
+      <sub>El Fahim Sana<br/>AI/ML</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Ibtissam_Khannij/profile.png" width="60" alt="Ibtissam Khannij" /><br/>
+      <sub>Ibtissam<br/>Frontend</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Khadija_Anhayfou/profile.png" width="60" alt="Khadija Anhayfou" /><br/>
+      <sub>Khadija<br/>Frontend</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Nisrine_Amroug/profile.png" width="60" alt="Nisrine Amroug" /><br/>
+      <sub>Nisrine<br/>AI/ML</sub>
+    </td>
+    <td align="center">
+      <img src="./public/profiles/Wafae_El_Kari/profile.png" width="60" alt="Wafae El Kari" /><br/>
+      <sub>Wafae El Kari<br/>Frontend</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./public/profiles/Yasser_Touil/profile.png" width="60" alt="Yasser Touil" /><br/>
+      <sub>Yasser Touil<br/>Frontend</sub>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+---
+
+## ⚠️ Why This Warning System?
+
+Managing a team of **17+ people** across multiple domains requires clear expectations and accountability. This system was built to:
+
+1. **Establish Clear Expectations** - Document what's expected from every team member
+2. **Fair Warning System** - Give members fair notice before any serious consequences  
+3. **Maintain Productivity** - Ensure deadlines are met and communication flows
+4. **Protect Team Morale** - Create accountability without micromanagement
+5. **Enable Scaling** - As the team grows, the system scales with it
+
+### 🔴 The 3-Warning Policy
+
+| Warnings | Status | Action |
+|----------|--------|--------|
+| 0 | ✅ Good Standing | Keep it up! |
+| 1 | ⚠️ First Notice | Review feedback |
+| 2 | 🔶 At Risk | Final warning |
+| 3 | ❌ Dropped | Access revoked |
 
 ---
 
@@ -18,7 +182,8 @@ A modern, full-stack warning management system built for ERP startup teams. This
 - [API Documentation](#-api-documentation)
 - [User Roles](#-user-roles)
 - [Warning System](#-warning-system)
-- [Email Notifications](#-email-notifications)
+- [Member Management](#-member-management)
+- [Security](#-security)
 - [Contributing](#-contributing)
 
 ---
@@ -26,29 +191,17 @@ A modern, full-stack warning management system built for ERP startup teams. This
 ## ✨ Features
 
 ### 👨‍💼 Admin Features
-- **Dashboard** - Overview of team statistics and recent activity
-- **Member Management** - Add, view, and manage team members
+- **Dashboard** - Overview of team statistics and warning charts
+- **Member Management** - Add, view, disable members (local env only)
 - **Warning System** - Issue warnings with documented reasons
 - **Activity Log** - Complete audit trail of all admin actions
-- **Profile & Settings** - Theme toggle (dark/light mode)
+- **Warning Policy** - View and share team guidelines
 
-### 👤 Member Features
-- **Personal Dashboard** - View status and recent notifications
-- **Warning History** - Track personal warnings with timeline view
-- **Team Directory** - Browse and view other team members' profiles
-- **Profile Page** - Personal information and theme preferences
-
-### 🔔 Notification System
-- Real-time notification bell with unread count
-- Member notifications track read/unread status
-- Admin activity log for historical records
-- Email notifications for warnings and account status
-
-### 🎨 Design
-- Modern dark/light theme toggle
-- Responsive design for all screen sizes
-- Smooth animations and transitions
-- Professional gradient styling
+### 👤 Member Features  
+- **Personal Dashboard** - View status and notifications
+- **Warning History** - Track personal warnings
+- **Team Directory** - Browse team member profiles
+- **Warning Policy** - Understand expectations
 
 ---
 
@@ -60,7 +213,7 @@ A modern, full-stack warning management system built for ERP startup teams. This
 | **Frontend** | React 19, CSS Modules |
 | **Backend** | Next.js API Routes |
 | **Database** | JSON file-based storage |
-| **Authentication** | JWT with HttpOnly cookies |
+| **Authentication** | JWT + SHA-256 password hashing |
 | **Email** | Nodemailer with Gmail SMTP |
 | **Icons** | Lucide React |
 
@@ -73,279 +226,103 @@ next-app/
 ├── src/
 │   ├── app/
 │   │   ├── admin/              # Admin pages
-│   │   │   ├── members/        # Member management
-│   │   │   ├── notifications/  # Activity log
-│   │   │   ├── profile/        # Admin settings
-│   │   │   └── page.js         # Admin dashboard
 │   │   ├── dashboard/          # Member pages
-│   │   │   ├── members/        # Team directory
-│   │   │   ├── profile/        # Member profile
-│   │   │   ├── warnings/       # Warning history
-│   │   │   └── page.js         # Member dashboard
 │   │   ├── api/                # API routes
-│   │   │   ├── auth/           # Authentication
-│   │   │   ├── members/        # Member CRUD
-│   │   │   ├── warnings/       # Warning management
-│   │   │   └── notifications/  # Notification system
-│   │   ├── db/                 # JSON database files
-│   │   │   ├── users.js        # User credentials
-│   │   │   ├── members.json    # Member data
-│   │   │   └── notifications.json
-│   │   └── globals.css         # Global styles & themes
+│   │   └── db/                 # JSON database
 │   ├── components/             # Reusable components
-│   │   ├── sidebar/            # Navigation sidebar
-│   │   ├── notificationPanel/  # Notification system
-│   │   ├── warningCounter/     # Warning display
-│   │   ├── statusBadge/        # Status indicators
-│   │   └── issueWarningModal/  # Warning form modal
-│   ├── utils/
-│   │   ├── auth.js             # JWT utilities
-│   │   └── email.js            # Email service
-│   └── middleware.js           # Route protection
+│   ├── hooks/                  # Custom hooks
+│   └── utils/                  # Utilities
 ├── public/
-│   └── profiles/               # Member profile images
-├── .env.local                  # Environment variables
-├── package.json
-└── README.md
+│   ├── assets/                 # Logo and static assets
+│   └── profiles/               # Member profile directories
+└── docs/                       # Documentation
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+```bash
+# Clone repository
+git clone https://github.com/ayoubmajid67/warnings_erp_project.git
+cd warnings_erp_project/next-app
 
-- Node.js 18+ 
-- npm or yarn
-- Gmail account with App Password (for email notifications)
+# Install dependencies
+npm install
 
-### Installation
+# Generate passwords (first time)
+node src/utils/scripts/usersPasswordGenerator.js
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/warnings_erp_project.git
-   cd warnings_erp_project/next-app
-   ```
+# Run development server
+npm run dev
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**
-   ```bash
-   cp .env.example .env.local
-   # Edit .env.local with your credentials
-   ```
-
-4. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open in browser**
-   ```
-   http://localhost:3000
-   ```
+# Open http://localhost:3000
+```
 
 ---
 
 ## 🔐 Environment Variables
 
-Create a `.env.local` file in the root directory:
-
 ```env
-# JWT Secret (generate a secure random string)
-JWT_SECRET=your-super-secret-jwt-key-here
-
-# Gmail SMTP Configuration
+NEXT_PUBLIC_APP_ENV=local   # 'local' or 'production'
+JWT_SECRET=your-secret-key
 SMTP_USER=your-gmail@gmail.com
-SMTP_PASS=your-16-char-app-password
+SMTP_PASS=your-app-password
 ```
-
-### Setting up Gmail App Password
-
-1. Go to [Google Account Security](https://myaccount.google.com/security)
-2. Enable **2-Step Verification** if not already enabled
-3. Go to Security → 2-Step Verification → **App passwords**
-4. Select "Mail" and "Windows Computer"
-5. Click "Generate" to get your 16-character password
-6. Use this password as `SMTP_PASS`
 
 ---
 
 ## 📡 API Documentation
 
-### Authentication
-
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/api/auth/login` | POST | User login |
 | `/api/auth/logout` | POST | User logout |
-| `/api/auth/me` | GET | Get current user |
-| `/api/auth/validate` | GET | Validate session |
-
-### Members
-
-| Endpoint | Method | Auth | Description |
-|----------|--------|------|-------------|
-| `/api/members` | GET | All | List all members |
-| `/api/members` | POST | Admin | Create new member |
-| `/api/members/[id]` | GET | All | Get member details |
-| `/api/members/[id]` | PUT | Admin | Update member |
-| `/api/members/[id]` | DELETE | Admin | Delete member |
-
-### Warnings
-
-| Endpoint | Method | Auth | Description |
-|----------|--------|------|-------------|
-| `/api/warnings` | POST | Admin | Issue a warning |
-| `/api/warnings/[id]` | GET | All | Get warning details |
-
-### Notifications
-
-| Endpoint | Method | Auth | Description |
-|----------|--------|------|-------------|
-| `/api/notifications` | GET | All | Get notifications |
-| `/api/notifications` | PATCH | Member | Mark as read |
+| `/api/members` | GET | List members |
+| `/api/members` | POST | Add member (local) |
+| `/api/members` | DELETE | Disable member (local) |
+| `/api/warnings` | POST | Issue warning |
+| `/api/notifications` | GET/PATCH | Notifications |
 
 ---
 
 ## 👥 User Roles
 
-### Admin
-- **Access**: Full system access
-- **Session Duration**: 1 hour
-- **Capabilities**:
-  - Create, edit, and delete members
-  - Issue warnings to members
-  - View complete activity log
-  - Access all member profiles
-
-### Member
-- **Access**: Personal dashboard and team directory
-- **Session Duration**: 24 hours
-- **Capabilities**:
-  - View personal warning history
-  - Browse team member profiles
-  - Receive notifications
-  - Toggle theme preferences
-
----
-
-## ⚠️ Warning System
-
-### How It Works
-
-1. **First Warning** - Member receives notification and email
-2. **Second Warning** - Final notice warning issued
-3. **Third Warning** - Member status changes to "dropped"
-   - Access is automatically revoked
-   - Cannot log in to the system
-   - Receives termination email
-
-### Warning Flow
-
-```
-Active Member → Warning 1 → Warning 2 (Final Notice) → Warning 3 → Dropped
-```
-
-### Status Types
-
-| Status | Description |
-|--------|-------------|
-| `active` | Normal member with full access |
-| `dropped` | Terminated member, no access |
-
----
-
-## 📧 Email Notifications
-
-The system sends beautifully designed HTML emails for:
-
-- **Warning Notifications** - When a warning is issued
-- **Dropout Notifications** - When membership is terminated
-- **Welcome Emails** - When a new member is added (optional)
-
-### Email Templates
-
-All emails feature:
-- Modern gradient design
-- Responsive layout
-- Professional branding
-- Clear call-to-action
-
----
-
-## 🎨 Theming
-
-The application supports both dark and light themes:
-
-- Toggle available in profile/settings page
-- Preference saved to localStorage
-- Smooth transition between themes
-
-### CSS Variables
-
-Themes are controlled via CSS variables in `globals.css`:
-
-```css
-:root {
-  /* Dark theme (default) */
-  --bg-primary: #0f1419;
-  --text-primary: #ffffff;
-}
-
-[data-theme="light"] {
-  /* Light theme */
-  --bg-primary: #f8fafc;
-  --text-primary: #1a1f2e;
-}
-```
+| Role | Access | Session |
+|------|--------|---------|
+| **Admin** | Full system access | 1 hour |
+| **Member** | Personal dashboard | 24 hours |
 
 ---
 
 ## 🔒 Security
 
-- **JWT Authentication** with HttpOnly cookies
-- **Role-based access control**
-- **Password protection** (production passwords required)
-- **Session expiration** (1 hour admin, 24 hours member)
-- **CSRF protection** via SameSite cookies
-
-### Production Recommendations
-
-- [ ] Implement password hashing with bcrypt
-- [ ] Use a proper database (PostgreSQL, MongoDB)
-- [ ] Add rate limiting to API endpoints
-- [ ] Enable HTTPS in production
-- [ ] Set up proper logging and monitoring
+- ✅ SHA-256 password hashing
+- ✅ JWT with HttpOnly cookies
+- ✅ Role-based access control
+- ✅ Environment-based write restrictions
+- ✅ Gitignored secrets
 
 ---
 
-## 🤝 Contributing
+## 🔗 Related Links
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- **Main ERP Project**: [majjid.com/project.html?project=#intellcap-system](https://majjid.com/project.html?project=#intellcap-system)
+- **Team Leader Portfolio**: [majjid.com](https://majjid.com)
+- **INTELLCAP**: Internal corporate platform
 
 ---
 
 ## 📞 Contact
 
-**Project Maintainer**: Ayoub Majjid  
-**Email**: ayoub@majjid.com
-
----
-
-## 📄 License
-
-This project is proprietary software developed for ERP Team internal use.
+**Project Lead**: Ayoub Majjid  
+**Email**: ayoubmajid67@gmail.com  
+**Website**: [majjid.com](https://majjid.com)  
+**GitHub**: [@ayoubmajid67](https://github.com/ayoubmajid67)
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by the ERP Team</strong>
+  <strong>Built with ❤️ by the INTELLCAP ERP Team</strong><br/>
+  <sub>© 2025 INTELLCAP SARL - All Rights Reserved</sub>
 </p>

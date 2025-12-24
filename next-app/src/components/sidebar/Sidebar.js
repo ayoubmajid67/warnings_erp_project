@@ -25,6 +25,7 @@ export default function Sidebar() {
     { href: '/admin', icon: LayoutDashboard, label: 'Dashboard' },
     { href: '/admin/members', icon: Users, label: 'Team Members' },
     { href: '/admin/notifications', icon: Activity, label: 'Activity Log' },
+    { href: '/dashboard/policy', icon: Shield, label: 'Warning Policy' },
     { href: '/admin/profile', icon: Settings, label: 'Settings' }
   ];
 
@@ -32,6 +33,7 @@ export default function Sidebar() {
     { href: '/dashboard', icon: LayoutDashboard, label: 'My Dashboard' },
     { href: '/dashboard/warnings', icon: AlertTriangle, label: 'My Warnings' },
     { href: '/dashboard/members', icon: Users, label: 'Team Members' },
+    { href: '/dashboard/policy', icon: Shield, label: 'Warning Policy' },
     { href: '/dashboard/profile', icon: Settings, label: 'Profile' }
   ];
 
