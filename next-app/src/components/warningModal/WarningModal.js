@@ -62,6 +62,11 @@ export default function WarningModal({
       return;
     }
 
+    if (!proofFile) {
+      setError('Proof document is required');
+      return;
+    }
+
     // Pass file along with the warning data
     onConfirm(member.id, reason, proofFile);
     setReason('');
@@ -161,7 +166,7 @@ export default function WarningModal({
             {/* Proof Document Upload */}
             <div className="form-group">
               <label className="form-label">
-                Proof Document (Optional)
+                Proof Document *
               </label>
               <p className="form-hint">Upload evidence supporting this warning (PDF, PNG, JPG - max 5MB)</p>
               

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { AuthContext } from '@/providers/AuthProvider';
 import Sidebar from '@/components/sidebar/Sidebar';
 import { WarningCounter, StatusBadge } from '@/components/warningBadge/WarningBadge';
-import { AlertTriangle, Clock, FileText, ShieldAlert } from 'lucide-react';
+import { AlertTriangle, Clock, FileText, ShieldAlert, Eye } from 'lucide-react';
 import '../dashboard.css';
 import './warnings.css';
 
@@ -147,7 +147,16 @@ export default function MemberWarningsPage() {
                             </span>
                           </div>
                           <p className="timeline-reason">{warning.reason}</p>
-                          <span className="timeline-issuer">Issued by: {warning.issuedBy}</span>
+                          <div className="timeline-footer">
+                            <span className="timeline-issuer">Issued by: {warning.issuedBy}</span>
+                            <button 
+                              className="btn btn-primary btn-sm"
+                              onClick={() => router.push(`/warnings/${warning.id}`)}
+                            >
+                              <Eye size={14} />
+                              View Details
+                            </button>
+                          </div>
                         </div>
                       </div>
                     ))}

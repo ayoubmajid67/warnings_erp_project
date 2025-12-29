@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { WarningCounter, StatusBadge } from '@/components/warningBadge/WarningBadge';
-import { AlertTriangle, Eye, Mail, Phone, ExternalLink, Trash2 } from 'lucide-react';
+import { AlertTriangle, Eye, Mail, Phone, ExternalLink, Trash2, Send } from 'lucide-react';
 import './MemberCard.css';
 
 /**
@@ -14,7 +14,10 @@ export default function MemberCard({
   onIssueWarning,
   showActions = true,
   variant = 'default', // 'default' | 'compact' | 'detailed'
-  isReadOnly = false // When true, disables write actions
+  isReadOnly = false, // When true, disables write actions
+  showCredentials = false,
+  onSendCredentials,
+  isSendingCredentials = false
 }) {
   const { 
     id, 
@@ -65,8 +68,8 @@ export default function MemberCard({
             <Image 
               src={profileImage} 
               alt={name} 
-              width={64} 
-              height={64}
+              width={80} 
+              height={80}
               className="member-avatar-img"
             />
           ) : (
@@ -102,6 +105,51 @@ export default function MemberCard({
         </div>
       </div>
 
+      {/* Credentials Section - Local Dev Only */}
+      {showCredentials && (
+        <div className="member-card-credentials">
+          <span className="credentials-section-label">Credentials Status</span>
+          <div className="credentials-display">
+            {member.receivedCred ? (
+              <div className="credentials-status-card sent">
+                <span className="credentials-icon">✅</span>
+                <div className="credentials-info">
+                  <span className="credentials-text">Sent</span>
+                  {member.credSentAt && (
+                    <span className="credentials-date">
+                      {new Date(member.credSentAt).toLocaleDateString()}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <div className="credentials-status-card not-sent">
+                <span className="credentials-icon">❌</span>
+                <span className="credentials-text">Not Sent</span>
+              </div>
+            )}
+            <button 
+              className="btn btn-ghost btn-sm"
+              onClick={() => onSendCredentials?.(member)}
+              disabled={isSendingCredentials}
+              title="Send credentials via email"
+            >
+              {isSendingCredentials ? (
+                <>
+                  <div className="btn-spinner-sm" />
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <Send size={14} />
+                  Send
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Actions */}
       {showActions && (
         <div className="member-card-actions">
@@ -129,7 +177,17 @@ export default function MemberCard({
 /**
  * MemberRow - Table row variant for member listing
  */
-export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = false, showDisableAction = false, onDisable }) {
+export function MemberRow({ 
+  member, 
+  onIssueWarning, 
+  onViewProfile, 
+  isReadOnly = false, 
+  showDisableAction = false, 
+  onDisable,
+  showCredentials = false,
+  onSendCredentials,
+  isSendingCredentials = false
+}) {
   const isDropped = member.status === 'dropped';
   const isDisabled = member.status === 'disabled';
   const canIssueWarning = !isDropped && !isDisabled && member.warningCount < 3;
@@ -168,6 +226,36 @@ export function MemberRow({ member, onIssueWarning, onViewProfile, isReadOnly = 
       <td>
         <StatusBadge status={member.status} />
       </td>
+      {showCredentials && (
+        <td>
+          <div className="credentials-cell">
+            {member.receivedCred ? (
+              <span className="credentials-status sent">
+                ✅ Sent
+                {member.credSentAt && (
+                  <span className="credentials-date">
+                    {new Date(member.credSentAt).toLocaleDateString()}
+                  </span>
+                )}
+              </span>
+            ) : (
+              <span className="credentials-status not-sent">❌ Not Sent</span>
+            )}
+            <button 
+              className="btn btn-ghost btn-icon"
+              onClick={() => onSendCredentials?.(member)}
+              disabled={isSendingCredentials}
+              title="Send credentials via email"
+            >
+              {isSendingCredentials ? (
+                <div className="btn-spinner-sm" />
+              ) : (
+                <Send size={16} />
+              )}
+            </button>
+          </div>
+        </td>
+      )}
       <td>
         <div className="table-actions">
           <button 

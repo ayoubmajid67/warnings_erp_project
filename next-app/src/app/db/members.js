@@ -199,9 +199,14 @@ export const disableMember = (id) => {
 
 /**
  * Issue a warning to a member
+ * @param {string} memberId - Member ID
+ * @param {string} reason - Reason for warning
+ * @param {string} issuedBy - Who issued the warning
+ * @param {string} warningId - Pre-generated warning ID (optional)
+ * @param {string} documentPath - Path to proof document (required)
  * @returns {Object} { success: boolean, member: Member, isDropped: boolean, message: string }
  */
-export const issueWarning = (memberId, reason, issuedBy) => {
+export const issueWarning = (memberId, reason, issuedBy, warningId = null, documentPath = null) => {
   members = loadMembers();
   
   const member = members.find(m => m.id === memberId);
@@ -220,10 +225,11 @@ export const issueWarning = (memberId, reason, issuedBy) => {
   
   // Create warning record
   const warning = {
-    id: `warning-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    id: warningId || `warning-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
     reason,
     issuedBy,
-    issuedAt: new Date().toISOString()
+    issuedAt: new Date().toISOString(),
+    documentPath: documentPath || null
   };
   
   // Update member

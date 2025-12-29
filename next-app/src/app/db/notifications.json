@@ -1,2 +1,59 @@
 [
+  {
+    "id": "notif-1767012372469-lhia01xsa",
+    "createdAt": "2025-12-29T12:46:12.469Z",
+    "target": "member",
+    "memberId": "member-test",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: test. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767012373942-ts54rnm5d",
+    "createdAt": "2025-12-29T12:46:13.942Z",
+    "target": "admin",
+    "memberId": "member-test",
+    "type": "warning_action",
+    "title": "Warning Issued to TEST USER - Ayoub Majid",
+    "message": "You issued the first warning to TEST USER - Ayoub Majid. Reason: test"
+  },
+  {
+    "id": "notif-1767013782493-sjnwo8t7b",
+    "createdAt": "2025-12-29T13:09:42.493Z",
+    "target": "member",
+    "memberId": "member-test",
+    "type": "warning",
+    "title": "Second Warning - Final Notice",
+    "message": "You have received your second warning. Reason: hh. This is your final notice before being dropped.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767013784133-ib4ulcd9t",
+    "createdAt": "2025-12-29T13:09:44.133Z",
+    "target": "admin",
+    "memberId": "member-test",
+    "type": "warning_action",
+    "title": "Warning Issued to TEST USER - Ayoub Majid",
+    "message": "You issued the second warning to TEST USER - Ayoub Majid. Reason: hh. This is their final notice."
+  },
+  {
+    "id": "notif-1767014218308-3j7zyd6z1",
+    "createdAt": "2025-12-29T13:16:58.308Z",
+    "target": "member",
+    "memberId": "member-test",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: nice. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767014220037-qcx1j7z9a",
+    "createdAt": "2025-12-29T13:17:00.037Z",
+    "target": "admin",
+    "memberId": "member-test",
+    "type": "warning_action",
+    "title": "Warning Issued to TEST USER - Ayoub Majid",
+    "message": "You issued the first warning to TEST USER - Ayoub Majid. Reason: nice"
+  }
 ]

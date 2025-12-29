@@ -25,9 +25,14 @@ export async function GET(request) {
     // Filter out disabled members for display (unless admin requests all)
     const url = new URL(request.url);
     const includeDisabled = url.searchParams.get('includeDisabled') === 'true';
-    const visibleMembers = includeDisabled 
+    let visibleMembers = includeDisabled 
       ? members 
       : members.filter(m => m.status !== 'disabled');
+    
+    // Filter out test users for non-admin users
+    if (user.role !== 'admin') {
+      visibleMembers = visibleMembers.filter(m => !m.isTestUser);
+    }
     
     // Admin gets full stats
     if (user.role === 'admin') {

@@ -8,7 +8,7 @@ import MemberCard, { MemberRow } from '@/components/memberCard/MemberCard';
 import WarningModal from '@/components/warningModal/WarningModal';
 import AddMemberModal from '@/components/addMemberModal/AddMemberModal';
 import { useEnvironment } from '@/hooks/useEnvironment';
-import { Search, Grid, List, UserPlus, Trash2 } from 'lucide-react';
+import { Search, Grid, List, UserPlus, Trash2, Mail, Send } from 'lucide-react';
 import '../admin.css';
 import './members.css';
 
@@ -34,6 +34,10 @@ export default function MembersPage() {
   const [isAddMemberModalOpen, setIsAddMemberModalOpen] = useState(false);
   const [isAddMemberLoading, setIsAddMemberLoading] = useState(false);
   const [newMemberPassword, setNewMemberPassword] = useState(null);
+
+  // Credentials sending state
+  const [isSendingCredentials, setIsSendingCredentials] = useState(false);
+  const [sendingToMemberId, setSendingToMemberId] = useState(null);
 
   // Auth check
   useEffect(() => {
@@ -210,6 +214,77 @@ export default function MembersPage() {
     }
   };
 
+  // Send credentials to single member
+  const handleSendCredentials = async (member) => {
+    if (!confirm(`Send login credentials to ${member.name} (${member.email})?`)) {
+      return;
+    }
+
+    setSendingToMemberId(member.id);
+    try {
+      const response = await fetch('/api/credentials/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${getToken()}`
+        },
+        body: JSON.stringify({ memberId: member.id })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send credentials');
+      }
+
+      await fetchMembersRefresh();
+      alert(`✅ Credentials sent successfully to ${member.name}`);
+    } catch (err) {
+      alert(`❌ Error: ${err.message}`);
+    } finally {
+      setSendingToMemberId(null);
+    }
+  };
+
+  // Send credentials to all members
+  const handleSendCredentialsToAll = async () => {
+    const activeCount = members.filter(m => m.status === 'active').length;
+    
+    if (!confirm(`Send login credentials to all ${activeCount} active members?\n\nThis will send an email to each member with their login information.`)) {
+      return;
+    }
+
+    setIsSendingCredentials(true);
+    try {
+      const response = await fetch('/api/credentials/send-all', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${getToken()}`
+        }
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send credentials');
+      }
+
+      await fetchMembersRefresh();
+      
+      const { results } = data;
+      alert(
+        `✅ Credentials Sent!\n\n` +
+        `Sent: ${results.sent}/${results.total}\n` +
+        (results.failed > 0 ? `Failed: ${results.failed}` : '')
+      );
+    } catch (err) {
+      alert(`❌ Error: ${err.message}`);
+    } finally {
+      setIsSendingCredentials(false);
+    }
+  };
+
   if (!isAdmin) return null;
 
   return (
@@ -225,16 +300,40 @@ export default function MembersPage() {
               <p className="page-subtitle">Manage and monitor all team members</p>
             </div>
             
-            {/* Add Member Button - Local env only */}
-            {isLocal && (
-              <button 
-                className="add-member-btn"
-                onClick={() => setIsAddMemberModalOpen(true)}
-              >
-                <UserPlus size={18} />
-                Add Member
-              </button>
-            )}
+            <div className="page-header-actions">
+              {/* Send Credentials to All - Local env only */}
+              {isLocal && (
+                <button 
+                  className="send-all-credentials-btn"
+                  onClick={handleSendCredentialsToAll}
+                  disabled={isSendingCredentials}
+                  title="Send credentials to all active members"
+                >
+                  {isSendingCredentials ? (
+                    <>
+                      <div className="btn-spinner" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} />
+                      Send All Credentials
+                    </>
+                  )}
+                </button>
+              )}
+              
+              {/* Add Member Button - Local env only */}
+              {isLocal && (
+                <button 
+                  className="add-member-btn"
+                  onClick={() => setIsAddMemberModalOpen(true)}
+                >
+                  <UserPlus size={18} />
+                  Add Member
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Filters */}
@@ -327,6 +426,9 @@ export default function MembersPage() {
                     member={member}
                     onIssueWarning={handleIssueWarning}
                     isReadOnly={isProduction}
+                    showCredentials={isLocal}
+                    onSendCredentials={handleSendCredentials}
+                    isSendingCredentials={sendingToMemberId === member.id}
                   />
                   {/* Disable button - Local env only */}
                   {isLocal && member.status !== 'disabled' && (
@@ -355,6 +457,7 @@ export default function MembersPage() {
                     <th>Role</th>
                     <th>Warnings</th>
                     <th>Status</th>
+                    {isLocal && <th>Credentials</th>}
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -368,6 +471,9 @@ export default function MembersPage() {
                       isReadOnly={isProduction}
                       showDisableAction={isLocal && member.status !== 'disabled'}
                       onDisable={() => handleDisableMember(member)}
+                      showCredentials={isLocal}
+                      onSendCredentials={handleSendCredentials}
+                      isSendingCredentials={sendingToMemberId === member.id}
                     />
                   ))}
                 </tbody>

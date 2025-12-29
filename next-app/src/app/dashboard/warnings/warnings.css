@@ -210,6 +210,15 @@
   line-height: 1.5;
 }
 
+.timeline-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-4);
+  padding-top: var(--spacing-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .timeline-issuer {
   font-size: var(--font-size-xs);
   color: var(--text-muted);

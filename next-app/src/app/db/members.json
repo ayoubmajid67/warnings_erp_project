@@ -1,5 +1,52 @@
 [
   {
+    "id": "member-test",
+    "name": "TEST USER - Ayoub Majid",
+    "email": "ayoubmajid071@gmail.com",
+    "phone": "212 600-000000",
+    "role": "Test Account - All Functions",
+    "domain": "Testing & Quality Assurance",
+    "status": "active",
+    "warningCount": 1,
+    "warnings": [
+      {
+        "id": "warning-1767014218300-zgytnswwg",
+        "reason": "nice",
+        "issuedBy": "Admin",
+        "issuedAt": "2025-12-29T13:16:58.305Z",
+        "documentPath": "/warnings/warning-1767014218300-zgytnswwg.pdf"
+      }
+    ],
+    "isTestUser": true,
+    "receivedCred": true,
+    "profileImage": null,
+    "cvPath": null,
+    "github": "https://github.com/ayoubmajid67",
+    "linkedin": "https://www.linkedin.com/in/youbista/",
+    "joinedAt": "2025-12-29",
+    "description": "Test user account for testing all system functions. Only visible to administrators. Warnings can be reset at any time.",
+    "skills": [
+      {
+        "name": "Testing",
+        "category": "QA"
+      },
+      {
+        "name": "System Testing",
+        "category": "QA"
+      }
+    ],
+    "experiences": [],
+    "projects": [],
+    "education": [],
+    "languages": [
+      {
+        "name": "English",
+        "level": "C1"
+      }
+    ],
+    "credSentAt": "2025-12-29T12:43:05.695Z"
+  },
+  {
     "id": "member-alae",
     "name": "ACHEACHE ALAA EDDINE",
     "email": "alaedineacheache@gmail.com",
@@ -149,7 +196,9 @@
         "name": "Arabic",
         "level": "C1"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:08.020Z"
   },
   {
     "id": "member-amal",
@@ -282,7 +331,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:10.412Z"
   },
   {
     "id": "member-amine",
@@ -416,7 +467,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:12.749Z"
   },
   {
     "id": "member-ayman",
@@ -575,7 +628,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:15.171Z"
   },
   {
     "id": "member-brahim",
@@ -708,7 +763,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:17.518Z"
   },
   {
     "id": "member-sana",
@@ -860,7 +917,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:19.866Z"
   },
   {
     "id": "member-ibtissam",
@@ -981,7 +1040,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:22.506Z"
   },
   {
     "id": "member-khadija",
@@ -1089,7 +1150,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:24.829Z"
   },
   {
     "id": "member-nisrine",
@@ -1196,7 +1259,9 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:27.168Z"
   },
   {
     "id": "member-wafae",
@@ -1317,7 +1382,9 @@
         "name": "Spanish",
         "level": "A1"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:29.501Z"
   },
   {
     "id": "member-yasser",
@@ -1450,6 +1517,215 @@
         "name": "English",
         "level": "B2"
       }
-    ]
+    ],
+    "receivedCred": true,
+    "credSentAt": "2025-12-29T12:43:31.804Z"
+  },
+  {
+    "id": "member-salma",
+    "name": "SALMA BEN YAMNA",
+    "email": "salmabenyamna@gmail.com",
+    "phone": "212 766-646376",
+    "role": "Data Analyst and Backend Developer - CVS Service",
+    "domain": "Computer Engineering",
+    "status": "active",
+    "warningCount": 0,
+    "warnings": [],
+    "receivedCred": true,
+    "profileImage": "/profiles/Salma_Ben_Yamna/profile.png",
+    "cvPath": "/profiles/Salma_Ben_Yamna/cv.pdf",
+    "github": "https://github.com/purebutterfly",
+    "linkedin": "https://www.linkedin.com/in/salma-ben-yamna/",
+    "joinedAt": "2024-10-01",
+    "description": "Currently a fourth-year Computer Science student at EMSI, seeking an internship to deepen knowledge and apply passion for the field. Eager to gain valuable professional experience.",
+    "skills": [
+      {
+        "name": "C",
+        "category": "Programming"
+      },
+      {
+        "name": "C++",
+        "category": "Programming"
+      },
+      {
+        "name": "Python",
+        "category": "Programming"
+      },
+      {
+        "name": "Java",
+        "category": "Programming"
+      },
+      {
+        "name": "Visual Basic",
+        "category": "Programming"
+      },
+      {
+        "name": "Bash",
+        "category": "DevOps"
+      },
+      {
+        "name": "React",
+        "category": "Front-End"
+      },
+      {
+        "name": ".NET",
+        "category": "Back-End"
+      },
+      {
+        "name": "Flask",
+        "category": "Back-End"
+      },
+      {
+        "name": "MySQL",
+        "category": "Database"
+      },
+      {
+        "name": "Oracle",
+        "category": "Database"
+      },
+      {
+        "name": "SQL Server",
+        "category": "Database"
+      },
+      {
+        "name": "SQLite",
+        "category": "Database"
+      },
+      {
+        "name": "Data Structures",
+        "category": "Programming"
+      },
+      {
+        "name": "Algorithms",
+        "category": "Programming"
+      },
+      {
+        "name": "Object-Oriented Programming",
+        "category": "Programming"
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Programming"
+      },
+      {
+        "name": "UML",
+        "category": "Design"
+      },
+      {
+        "name": "Merise",
+        "category": "Design"
+      },
+      {
+        "name": "Enterprise Architecture",
+        "category": "Design"
+      },
+      {
+        "name": "Mobile Development",
+        "category": "Mobile"
+      },
+      {
+        "name": "Data Warehousing",
+        "category": "Data"
+      },
+      {
+        "name": "Power BI",
+        "category": "Data"
+      },
+      {
+        "name": "Data Processing",
+        "category": "Data"
+      },
+      {
+        "name": "Data Analysis",
+        "category": "Data"
+      },
+      {
+        "name": "Hadoop",
+        "category": "Big Data"
+      },
+      {
+        "name": "SQL Server Management Studio (SSMS)",
+        "category": "Database"
+      },
+      {
+        "name": "HTML",
+        "category": "Front-End"
+      },
+      {
+        "name": "CSS",
+        "category": "Front-End"
+      },
+      {
+        "name": "JavaScript",
+        "category": "Front-End"
+      },
+      {
+        "name": "Arduino",
+        "category": "IoT"
+      },
+      {
+        "name": "Git",
+        "category": "DevOps"
+      },
+      {
+        "name": "Unix System Basics",
+        "category": "DevOps"
+      }
+    ],
+    "experiences": [
+      {
+        "company": "FactoryTech",
+        "role": "Intern",
+        "description": "Created and optimized stored procedures.",
+        "startDate": "June 2024",
+        "endDate": "June 2024"
+      }
+    ],
+    "projects": [
+      {
+        "name": "MRBOOKING",
+        "description": "Developed a travel booking platform similar to Booking.com, integrating hotel and flight booking options with a smooth user experience."
+      },
+      {
+        "name": "TRAVELINGUIDE",
+        "description": "Developed an application based on in-depth user needs analysis, utilizing modern technologies like HTML, CSS, JavaScript, Python, Flask, and SQLite for a user-friendly and adaptable interface."
+      },
+      {
+        "name": "Gestion de traffic en C++",
+        "description": "Developed an efficient traffic management system to control and regulate vehicle flow while minimizing collision risks, using object-oriented programming principles."
+      }
+    ],
+    "education": [
+      {
+        "school": "Ecole Marocaine des Sciences de l'Ingénieur RABAT",
+        "degree": "Fourth-year Computer Engineering Student",
+        "period": "2023 - Present"
+      },
+      {
+        "school": "CPGE IBN GHAZI RABAT",
+        "degree": "Two preparatory years in Mathematics and Physics (MP)",
+        "period": "2021 - 2023"
+      },
+      {
+        "school": "LYCEE TECHNIQUE TAZA",
+        "degree": "Baccalauréat international en sciences mathématiques B",
+        "period": "2021"
+      }
+    ],
+    "languages": [
+      {
+        "name": "French",
+        "level": "C1"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "credSentAt": "2025-12-29T12:43:34.253Z"
   }
 ]

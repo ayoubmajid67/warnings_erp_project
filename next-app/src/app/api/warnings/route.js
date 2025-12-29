@@ -7,6 +7,8 @@ import {
 } from '@/app/db/notifications';
 import { sendWarningEmail, sendDropoutEmail } from '@/utils/email';
 import { verifyToken } from '@/utils/auth';
+import fs from 'fs';
+import path from 'path';
 
 /**
  * POST /api/warnings - Issue a warning to a member (admin only)
@@ -23,9 +25,13 @@ export async function POST(request) {
       );
     }
 
-    const body = await request.json();
-    const { memberId, reason } = body;
+    // Parse form data (for file upload)
+    const formData = await request.formData();
+    const memberId = formData.get('memberId');
+    const reason = formData.get('reason');
+    const proofFile = formData.get('proofFile');
 
+    // Validation
     if (!memberId || !reason) {
       return NextResponse.json(
         { message: 'Member ID and reason are required' },
@@ -33,10 +39,50 @@ export async function POST(request) {
       );
     }
 
-    // Issue the warning
-    const result = issueWarning(memberId, reason, user.username || user.email);
+    if (!proofFile) {
+      return NextResponse.json(
+        { message: 'Proof document is required' },
+        { status: 400 }
+      );
+    }
+
+    // Generate warning ID first (needed for file name)
+    const warningId = `warning-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    
+    // Save proof document
+    const warningsDir = path.join(process.cwd(), 'public', 'warnings');
+    
+    // Create warnings directory if it doesn't exist
+    if (!fs.existsSync(warningsDir)) {
+      fs.mkdirSync(warningsDir, { recursive: true });
+    }
+
+    // Get file extension
+    const fileExtension = proofFile.name.split('.').pop();
+    const fileName = `${warningId}.${fileExtension}`;
+    const filePath = path.join(warningsDir, fileName);
+    
+    // Save file
+    const buffer = Buffer.from(await proofFile.arrayBuffer());
+    fs.writeFileSync(filePath, buffer);
+    
+    // Document path for database (relative to public folder)
+    const documentPath = `/warnings/${fileName}`;
+
+    // Issue the warning with document path
+    const result = issueWarning(
+      memberId, 
+      reason, 
+      user.username || user.email,
+      warningId,
+      documentPath
+    );
 
     if (!result.success) {
+      // Clean up file if warning failed
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath);
+      }
       return NextResponse.json(
         { message: result.message },
         { status: 400 }
@@ -54,8 +100,8 @@ export async function POST(request) {
     } else {
       // Regular warning notification for member
       createWarningNotification(memberId, member.warningCount, reason);
-      // Send warning email to member
-      await sendWarningEmail(member.email, member.name, member.warningCount, reason);
+      // Send warning email to member with warning link
+      await sendWarningEmail(member.email, member.name, member.warningCount, reason, result.warning.id);
     }
 
     // Create action log for admin

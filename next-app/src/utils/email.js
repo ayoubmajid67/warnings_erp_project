@@ -304,7 +304,7 @@ async function sendEmail(to, subject, htmlContent) {
 /**
  * Send warning notification email to member
  */
-export async function sendWarningEmail(memberEmail, memberName, warningCount, reason) {
+export async function sendWarningEmail(memberEmail, memberName, warningCount, reason, warningId = null) {
   const warningTexts = {
     1: 'First Warning',
     2: 'Second Warning - Final Notice',
@@ -312,6 +312,10 @@ export async function sendWarningEmail(memberEmail, memberName, warningCount, re
   };
 
   const subject = `⚠️ ${warningTexts[warningCount] || 'Warning'} - ERP Team`;
+  
+  // Production URL for warning details
+  const productionUrl = 'https://warnings-erp-project-g9st.vercel.app';
+  const warningLink = warningId ? `${productionUrl}/warnings/${warningId}` : null;
 
   const htmlContent = `
     <!DOCTYPE html>
@@ -322,6 +326,23 @@ export async function sendWarningEmail(memberEmail, memberName, warningCount, re
       <title>Warning Notification</title>
       <style>
         ${getBaseStyles()}
+        .view-details-btn {
+          display: inline-block;
+          padding: 14px 32px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: 600;
+          font-size: 15px;
+          margin: 20px 0;
+          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+          transition: all 0.3s ease;
+        }
+        .view-details-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
       </style>
     </head>
     <body>
@@ -358,6 +379,18 @@ export async function sendWarningEmail(memberEmail, memberName, warningCount, re
                 <div class="label">📋 Reason for Warning</div>
                 <div class="value">${reason}</div>
               </div>
+              
+              ${warningLink ? `
+              <!-- View Details Button -->
+              <div style="text-align: center; margin: 30px 0;">
+                <a href="${warningLink}" class="view-details-btn">
+                  👁️ View Warning Details
+                </a>
+                <p style="color: #64748b; font-size: 13px; margin-top: 10px;">
+                  Click the button above to view complete warning information
+                </p>
+              </div>
+              ` : ''}
               
               ${warningCount === 2 ? `
               <!-- Final Notice Alert -->
@@ -611,6 +644,129 @@ export async function sendWelcomeEmail(memberEmail, memberName, temporaryPasswor
               <!-- Signature -->
               <div class="signature">
                 <p>Welcome aboard!</p>
+                <p class="team-name">ERP Team Administration</p>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer">
+              <div class="footer-logo">ERP</div>
+              <p class="footer-text">
+                This is an automated message from the ERP Warning Management System.
+              </p>
+              <a href="mailto:${EMAIL_CONFIG.contact}" class="contact-link">
+                📧 ${EMAIL_CONFIG.contact}
+              </a>
+              <div class="social-links">
+                <span style="color: #94a3b8; font-size: 11px;">
+                  © ${new Date().getFullYear()} ERP Team. All rights reserved.
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  `;
+
+  return await sendEmail(memberEmail, subject, htmlContent);
+}
+
+/**
+ * Send credentials email to member (DEV ONLY)
+ */
+export async function sendCredentialsEmail(memberEmail, memberName, password) {
+  const subject = '🔐 Your ERP System Credentials';
+
+  const htmlContent = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your ERP Credentials</title>
+      <style>
+        ${getBaseStyles()}
+        .header {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .credentials-card {
+          background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+          border: 1px solid #0ea5e9;
+          padding: 25px;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        .credentials-card .label {
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #075985;
+          margin-bottom: 5px;
+        }
+        .credentials-card .value {
+          font-size: 18px;
+          font-weight: 700;
+          color: #0c4a6e;
+          font-family: 'Courier New', monospace;
+          background: #ffffff;
+          padding: 10px 15px;
+          border-radius: 8px;
+          margin-top: 5px;
+          display: inline-block;
+          word-break: break-all;
+        }
+      </style>
+    </head>
+    <body>
+      <div style="padding: 20px; background-color: #f0f4f8;">
+        <div class="email-wrapper">
+          <div class="email-container">
+            
+            <!-- Header -->
+            <div class="header">
+              <div class="logo-container">
+                <div class="logo-icon">🔐</div>
+              </div>
+              <h1>Your System Credentials</h1>
+              <p class="subtitle">ERP Team Management System</p>
+            </div>
+            
+            <!-- Content -->
+            <div class="content">
+              <p class="greeting">Hello <strong>${memberName}</strong>,</p>
+              
+              <div class="message-box">
+                <p>Here are your login credentials for the ERP Team Management System. 
+                Please keep this information secure and do not share it with anyone.</p>
+              </div>
+              
+              <!-- Credentials Card -->
+              <div class="credentials-card">
+                <div class="label">📧 Login Email</div>
+                <div class="value">${memberEmail}</div>
+                <div style="margin-top: 15px;">
+                  <div class="label">🔐 Password</div>
+                  <div class="value">${password}</div>
+                </div>
+              </div>
+              
+              <!-- Security Notice -->
+              <div class="alert-box alert-warning">
+                <span class="alert-icon">🔒</span>
+                <span class="alert-content">
+                  <strong>Security Notice:</strong> This is a development environment. 
+                  Please change your password after your first login to ensure account security.
+                </span>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <!-- Signature -->
+              <div class="signature">
+                <p>Best regards,</p>
                 <p class="team-name">ERP Team Administration</p>
               </div>
             </div>

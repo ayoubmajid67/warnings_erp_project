@@ -88,16 +88,23 @@ export default function MemberProfilePage() {
     }
   };
 
-  const handleConfirmWarning = async (memberId, reason) => {
+  const handleConfirmWarning = async (memberId, reason, proofFile) => {
     setIsWarningLoading(true);
     try {
+      // Create FormData for file upload
+      const formData = new FormData();
+      formData.append('memberId', memberId);
+      formData.append('reason', reason);
+      if (proofFile) {
+        formData.append('proofFile', proofFile);
+      }
+
       const response = await fetch('/api/warnings', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Authorization: `Bearer ${getToken()}`
         },
-        body: JSON.stringify({ memberId, reason })
+        body: formData
       });
 
       if (!response.ok) {
@@ -109,6 +116,36 @@ export default function MemberProfilePage() {
       setIsWarningModalOpen(false);
     } catch (err) {
       alert(err.message);
+    } finally {
+      setIsWarningLoading(false);
+    }
+  };
+
+  const handleResetWarnings = async () => {
+    if (!confirm(`Reset all warnings for ${member.name}?\n\nThis will:\n- Clear all warnings (${member.warningCount})\n- Reset warning count to 0\n- Set status to active\n\nThis action is only available for test users.`)) {
+      return;
+    }
+
+    setIsWarningLoading(true);
+    try {
+      const response = await fetch('/api/test-user/reset-warnings', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${getToken()}`
+        }
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to reset warnings');
+      }
+
+      const data = await response.json();
+      alert(`✅ ${data.message}\n\nCleared ${data.testUser.warningsCleared} warning(s)`);
+      await fetchMemberRefresh();
+    } catch (err) {
+      alert(`❌ Error: ${err.message}`);
     } finally {
       setIsWarningLoading(false);
     }
@@ -259,19 +296,55 @@ export default function MemberProfilePage() {
                     </button>
                   )}
 
+                  {/* Reset Warnings Button - Test User Only */}
+                  {member.isTestUser && member.warningCount > 0 && (
+                    <button 
+                      className="btn btn-danger w-full mt-2"
+                      onClick={handleResetWarnings}
+                      disabled={isWarningLoading}
+                    >
+                      {isWarningLoading ? (
+                        <>
+                          <div className="btn-spinner" />
+                          Resetting...
+                        </>
+                      ) : (
+                        <>
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                            <path d="M21 3v5h-5" />
+                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                            <path d="M3 21v-5h5" />
+                          </svg>
+                          Reset Warnings
+                        </>
+                      )}
+                    </button>
+                  )}
+
                   {/* Warning History */}
                   {member.warnings && member.warnings.length > 0 && (
                     <div className="warning-history-mini">
                       <h4>History</h4>
                       {member.warnings.map((warning, index) => (
                         <div key={warning.id} className="warning-history-item-mini">
-                          <span className="warning-num">#{index + 1}</span>
-                          <div>
-                            <p>{warning.reason}</p>
-                            <span className="warning-date-mini">
-                              {formatDate(warning.issuedAt)}
-                            </span>
+                          <div className="warning-item-content">
+                            <span className="warning-num">#{index + 1}</span>
+                            <div className="warning-item-text">
+                              <p>{warning.reason}</p>
+                              <span className="warning-date-mini">
+                                {formatDate(warning.issuedAt)}
+                              </span>
+                            </div>
                           </div>
+                          <button
+                            className="btn-view-warning"
+                            onClick={() => router.push(`/warnings/${warning.id}`)}
+                            title="View warning details"
+                          >
+                            <ExternalLink size={14} />
+                            View
+                          </button>
                         </div>
                       ))}
                     </div>
