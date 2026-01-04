@@ -120,16 +120,23 @@ export default function AdminDashboard() {
     setIsWarningModalOpen(true);
   };
 
-  const handleConfirmWarning = async (memberId, reason) => {
+  const handleConfirmWarning = async (memberId, reason, proofFile) => {
     setIsWarningLoading(true);
     try {
+      // Create FormData for file upload
+      const formData = new FormData();
+      formData.append('memberId', memberId);
+      formData.append('reason', reason);
+      if (proofFile) {
+        formData.append('proofFile', proofFile);
+      }
+
       const response = await fetch('/api/warnings', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Authorization: `Bearer ${getToken()}`
         },
-        body: JSON.stringify({ memberId, reason })
+        body: formData
       });
 
       if (!response.ok) {

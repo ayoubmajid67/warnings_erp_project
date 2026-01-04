@@ -55,5 +55,43 @@
     "type": "warning_action",
     "title": "Warning Issued to TEST USER - Ayoub Majid",
     "message": "You issued the first warning to TEST USER - Ayoub Majid. Reason: nice"
+  },
+  {
+    "id": "notif-1767566190948-dl2nl65lm",
+    "createdAt": "2026-01-04T22:36:30.948Z",
+    "target": "member",
+    "memberId": "member-amine",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - ES-220\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Story ID** | ES-220 |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 4, 2026 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-220?atlOrigin=eyJpIjoiNzZhZTliNzcyZTdmNDc0MWE3MjZmNTljMWZiZGQ0YjYiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was responsible for creating an integration of the **Profile Page** with the back-end (**cvs-service**).\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the assigned story\r\n- Did not respond to messages for **1 week**\r\n- No communication or updates provided\r\n\r\n---\r\n\r\n## 🚫 Rules Violated\r\n1. **Failure to complete assigned story** - Story was not delivered without any excuse\r\n2. **Communication breach** - Did not report any issues at least 48 hours before the deadline. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767566192581-psf7kjmh1",
+    "createdAt": "2026-01-04T22:36:32.581Z",
+    "target": "admin",
+    "memberId": "member-amine",
+    "type": "warning_action",
+    "title": "Warning Issued to AMINE CHARRO",
+    "message": "You issued the first warning to AMINE CHARRO. Reason: # ⚠️ Warning Notice - ES-220\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Story ID** | ES-220 |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 4, 2026 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-220?atlOrigin=eyJpIjoiNzZhZTliNzcyZTdmNDc0MWE3MjZmNTljMWZiZGQ0YjYiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was responsible for creating an integration of the **Profile Page** with the back-end (**cvs-service**).\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the assigned story\r\n- Did not respond to messages for **1 week**\r\n- No communication or updates provided\r\n\r\n---\r\n\r\n## 🚫 Rules Violated\r\n1. **Failure to complete assigned story** - Story was not delivered without any excuse\r\n2. **Communication breach** - Did not report any issues at least 48 hours before the deadline"
+  },
+  {
+    "id": "notif-1767566252891-g5k77bok2",
+    "createdAt": "2026-01-04T22:37:32.891Z",
+    "target": "member",
+    "memberId": "member-yasser",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - ES-495\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Story ID** | ES-495 |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 4, 2026 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-495?atlOrigin=eyJpIjoiYmNiYzRlNDE3ZDYyNGRhZmFlYmI2ODFmYmViZGYzZDciLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was responsible for doing a **benchmarking of the Project Management Service**, so that we can easily gather ideas when we need to develop a new project management service — especially since we are very close to completing the **cvs-service**.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the assigned story\r\n- Did not respond to messages for **1 week**\r\n- No communication or updates provided\r\n\r\n---\r\n\r\n## 🚫 Rules Violated\r\n1. **Failure to complete assigned story** - Story was not delivered without any excuse\r\n2. **Communication breach** - Did not report any issues at least 48 hours before the deadline\r\n\r\n---\r\n\r\n## 📎 Evidence\r\n![Evidence Screenshot](image/ES-495_YASSER_TOUIL/1767563600552.png)\r\n\r\n. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767566255357-vl9lb9csv",
+    "createdAt": "2026-01-04T22:37:35.357Z",
+    "target": "admin",
+    "memberId": "member-yasser",
+    "type": "warning_action",
+    "title": "Warning Issued to YASSER TOUIL",
+    "message": "You issued the first warning to YASSER TOUIL. Reason: # ⚠️ Warning Notice - ES-495\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Story ID** | ES-495 |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 4, 2026 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-495?atlOrigin=eyJpIjoiYmNiYzRlNDE3ZDYyNGRhZmFlYmI2ODFmYmViZGYzZDciLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was responsible for doing a **benchmarking of the Project Management Service**, so that we can easily gather ideas when we need to develop a new project management service — especially since we are very close to completing the **cvs-service**.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the assigned story\r\n- Did not respond to messages for **1 week**\r\n- No communication or updates provided\r\n\r\n---\r\n\r\n## 🚫 Rules Violated\r\n1. **Failure to complete assigned story** - Story was not delivered without any excuse\r\n2. **Communication breach** - Did not report any issues at least 48 hours before the deadline\r\n\r\n---\r\n\r\n## 📎 Evidence\r\n![Evidence Screenshot](image/ES-495_YASSER_TOUIL/1767563600552.png)\r\n\r\n"
   }
 ]
