@@ -22,7 +22,7 @@ import './warning-details.css';
 export default function WarningDetailsPage() {
   const router = useRouter();
   const params = useParams();
-  const { getToken, user: currentUser } = useContext(AuthContext);
+  const { getToken, user: currentUser, loading: authLoading } = useContext(AuthContext);
   const warningId = params.warningId;
 
   const [warning, setWarning] = useState(null);
@@ -32,13 +32,16 @@ export default function WarningDetailsPage() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
+    // Wait for auth to finish loading before checking user
+    if (authLoading) return;
+
     if (!currentUser) {
       router.push('/auth/login');
       return;
     }
 
     fetchWarningDetails();
-  }, [warningId, currentUser]);
+  }, [warningId, currentUser, authLoading]);
 
   const fetchWarningDetails = async () => {
     try {
