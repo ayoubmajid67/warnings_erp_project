@@ -314,7 +314,7 @@ export async function sendWarningEmail(memberEmail, memberName, warningCount, re
   const subject = `⚠️ ${warningTexts[warningCount] || 'Warning'} - ERP Team`;
   
   // Production URL for warning details
-  const productionUrl = 'https://warnings-erp-project-g9st.vercel.app';
+  const productionUrl = 'https://warnings-erp-project-ow30su4gp-ayoubmajid67s-projects.vercel.app';
   const warningLink = warningId ? `${productionUrl}/warnings/${warningId}` : null;
 
   const htmlContent = `
