@@ -208,8 +208,16 @@
     "role": "AI Developer - Email Classification & CVS Service",
     "domain": "Intelligence Artificielle et Robotique",
     "status": "active",
-    "warningCount": 0,
-    "warnings": [],
+    "warningCount": 1,
+    "warnings": [
+      {
+        "id": "warning-1767654501733-b7qkxlu56",
+        "reason": "# ⚠️ Warning Notice - ES-307\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Story ID** | ES-307 |P\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 6, 2025 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-307?atlOrigin=eyJpIjoiNmEyYmMzMmY1OWVjNGQ5Mzk5ZDk0MWZjZDdiMWZhMzAiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was responsible for **preparing the dataset** and building the **Email Classification Model**.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-05T23:08:21.743Z",
+        "documentPath": "/warnings/warning-1767654501733-b7qkxlu56.pdf"
+      }
+    ],
     "profileImage": "/profiles/Amal_Lastak/profile.png",
     "cvPath": "/profiles/Amal_Lastak/cv.pdf",
     "github": "https://github.com/amallastak",

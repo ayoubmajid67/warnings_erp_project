@@ -93,5 +93,24 @@
     "type": "warning_action",
     "title": "Warning Issued to YASSER TOUIL",
     "message": "You issued the first warning to YASSER TOUIL. Reason: # ⚠️ Warning Notice - ES-495\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Story ID** | ES-495 |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 4, 2026 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-495?atlOrigin=eyJpIjoiYmNiYzRlNDE3ZDYyNGRhZmFlYmI2ODFmYmViZGYzZDciLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was responsible for doing a **benchmarking of the Project Management Service**, so that we can easily gather ideas when we need to develop a new project management service — especially since we are very close to completing the **cvs-service**.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the assigned story\r\n- Did not respond to messages for **1 week**\r\n- No communication or updates provided\r\n\r\n---\r\n\r\n## 🚫 Rules Violated\r\n1. **Failure to complete assigned story** - Story was not delivered without any excuse\r\n2. **Communication breach** - Did not report any issues at least 48 hours before the deadline\r\n\r\n---\r\n\r\n## 📎 Evidence\r\n![Evidence Screenshot](image/ES-495_YASSER_TOUIL/1767563600552.png)\r\n\r\n"
+  },
+  {
+    "id": "notif-1767654501745-0oeeu3cqb",
+    "createdAt": "2026-01-05T23:08:21.745Z",
+    "target": "member",
+    "memberId": "member-amal",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - ES-307\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Story ID** | ES-307 |P\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 6, 2025 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-307?atlOrigin=eyJpIjoiNmEyYmMzMmY1OWVjNGQ5Mzk5ZDk0MWZjZDdiMWZhMzAiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was responsible for **preparing the dataset** and building the **Email Classification Model**.\r\n\r\n---. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1767654504168-yce0ex9i7",
+    "createdAt": "2026-01-05T23:08:24.168Z",
+    "target": "admin",
+    "memberId": "member-amal",
+    "type": "warning_action",
+    "title": "Warning Issued to AMAL LASTAK",
+    "message": "You issued the first warning to AMAL LASTAK. Reason: # ⚠️ Warning Notice - ES-307\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Story ID** | ES-307 |P\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 6, 2025 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-307?atlOrigin=eyJpIjoiNmEyYmMzMmY1OWVjNGQ5Mzk5ZDk0MWZjZDdiMWZhMzAiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was responsible for **preparing the dataset** and building the **Email Classification Model**.\r\n\r\n---"
   }
 ]
