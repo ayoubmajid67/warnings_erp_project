@@ -112,5 +112,119 @@
     "type": "warning_action",
     "title": "Warning Issued to AMAL LASTAK",
     "message": "You issued the first warning to AMAL LASTAK. Reason: # ⚠️ Warning Notice - ES-307\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Story ID** | ES-307 |P\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 6, 2025 |\r\n\r\n---\r\n\r\n## 🔗 Story Reference\r\n[View Story on Jira](https://youbista.atlassian.net/browse/ES-307?atlOrigin=eyJpIjoiNmEyYmMzMmY1OWVjNGQ5Mzk5ZDk0MWZjZDdiMWZhMzAiLCJwIjoiaiJ9)\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was responsible for **preparing the dataset** and building the **Email Classification Model**.\r\n\r\n---"
+  },
+  {
+    "id": "notif-1768340442920-9t43kpltb",
+    "createdAt": "2026-01-13T21:40:42.920Z",
+    "target": "member",
+    "memberId": "member-amal",
+    "type": "warning",
+    "title": "Second Warning - Final Notice",
+    "message": "You have received your second warning. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-307 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was expected to maintain regular communication and provide updates on assigned tasks.\r\n\r\n---\r\n. This is your final notice before being dropped.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768340444543-3a08g4q7o",
+    "createdAt": "2026-01-13T21:40:44.543Z",
+    "target": "admin",
+    "memberId": "member-amal",
+    "type": "warning_action",
+    "title": "Warning Issued to AMAL LASTAK",
+    "message": "You issued the second warning to AMAL LASTAK. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-307 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was expected to maintain regular communication and provide updates on assigned tasks.\r\n\r\n---\r\n. This is their final notice."
+  },
+  {
+    "id": "notif-1768340518942-lsgtadjs1",
+    "createdAt": "2026-01-13T21:41:58.942Z",
+    "target": "member",
+    "memberId": "member-amine",
+    "type": "warning",
+    "title": "Second Warning - Final Notice",
+    "message": "You have received your second warning. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-220 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. This is your final notice before being dropped.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768340521261-zdfpleg3g",
+    "createdAt": "2026-01-13T21:42:01.261Z",
+    "target": "admin",
+    "memberId": "member-amine",
+    "type": "warning_action",
+    "title": "Warning Issued to AMINE CHARRO",
+    "message": "You issued the second warning to AMINE CHARRO. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-220 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. This is their final notice."
+  },
+  {
+    "id": "notif-1768340813327-bcr3pl678",
+    "createdAt": "2026-01-13T21:46:53.327Z",
+    "target": "member",
+    "memberId": "member-ibtissam",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Ibtissam |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nIbtissam was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768340815494-8bsvszb2q",
+    "createdAt": "2026-01-13T21:46:55.495Z",
+    "target": "admin",
+    "memberId": "member-ibtissam",
+    "type": "warning_action",
+    "title": "Warning Issued to IBTISSAM KHANNIJ",
+    "message": "You issued the first warning to IBTISSAM KHANNIJ. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Ibtissam |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nIbtissam was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---"
+  },
+  {
+    "id": "notif-1768341990014-jbr1p1qu1",
+    "createdAt": "2026-01-13T22:06:30.014Z",
+    "target": "member",
+    "memberId": "member-sana",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Sanae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nSanae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768341992304-uqz3tg1vo",
+    "createdAt": "2026-01-13T22:06:32.304Z",
+    "target": "admin",
+    "memberId": "member-sana",
+    "type": "warning_action",
+    "title": "Warning Issued to EL FAHIM SANA",
+    "message": "You issued the first warning to EL FAHIM SANA. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Sanae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nSanae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---"
+  },
+  {
+    "id": "notif-1768342023793-5aaulab3g",
+    "createdAt": "2026-01-13T22:07:03.793Z",
+    "target": "member",
+    "memberId": "member-wafae",
+    "type": "warning",
+    "title": "First Warning Received",
+    "message": "You have received your first warning. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n. Please improve your conduct.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768342026576-8c388wxvg",
+    "createdAt": "2026-01-13T22:07:06.576Z",
+    "target": "admin",
+    "memberId": "member-wafae",
+    "type": "warning_action",
+    "title": "Warning Issued to WAFAE ELKARI",
+    "message": "You issued the first warning to WAFAE ELKARI. Reason: # ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n"
+  },
+  {
+    "id": "notif-1768342063765-awbqj3m0j",
+    "createdAt": "2026-01-13T22:07:43.765Z",
+    "target": "member",
+    "memberId": "member-yasser",
+    "type": "warning",
+    "title": "Second Warning - Final Notice",
+    "message": "You have received your second warning. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-495 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. This is your final notice before being dropped.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1768342065723-fj3ph9rsj",
+    "createdAt": "2026-01-13T22:07:45.723Z",
+    "target": "admin",
+    "memberId": "member-yasser",
+    "type": "warning_action",
+    "title": "Warning Issued to YASSER TOUIL",
+    "message": "You issued the second warning to YASSER TOUIL. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-495 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. This is their final notice."
   }
 ]

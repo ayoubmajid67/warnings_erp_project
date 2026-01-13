@@ -208,7 +208,7 @@
     "role": "AI Developer - Email Classification & CVS Service",
     "domain": "Intelligence Artificielle et Robotique",
     "status": "active",
-    "warningCount": 1,
+    "warningCount": 2,
     "warnings": [
       {
         "id": "warning-1767654501733-b7qkxlu56",
@@ -216,6 +216,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-05T23:08:21.743Z",
         "documentPath": "/warnings/warning-1767654501733-b7qkxlu56.pdf"
+      },
+      {
+        "id": "warning-1768340442911-laicszdmz",
+        "reason": "# ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-307 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was expected to maintain regular communication and provide updates on assigned tasks.\r\n\r\n---\r\n",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T21:40:42.915Z",
+        "documentPath": "/warnings/warning-1768340442911-laicszdmz.pdf"
       }
     ],
     "profileImage": "/profiles/Amal_Lastak/profile.png",
@@ -351,7 +358,7 @@
     "role": "Front-end Developer - CVS Service",
     "domain": "Informatique",
     "status": "active",
-    "warningCount": 1,
+    "warningCount": 2,
     "warnings": [
       {
         "id": "warning-1767566190931-k6dxfks41",
@@ -359,6 +366,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-04T22:36:30.942Z",
         "documentPath": "/warnings/warning-1767566190931-k6dxfks41.pdf"
+      },
+      {
+        "id": "warning-1768340518930-i45g8dfrt",
+        "reason": "# ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-220 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T21:41:58.936Z",
+        "documentPath": "/warnings/warning-1768340518930-i45g8dfrt.pdf"
       }
     ],
     "profileImage": "/profiles/Amine_Charro/profile.png",
@@ -791,8 +805,16 @@
     "role": "Data Developer - Data Warehouse & CVS Service",
     "domain": "Artificial Intelligence and Data Science",
     "status": "active",
-    "warningCount": 0,
-    "warnings": [],
+    "warningCount": 1,
+    "warnings": [
+      {
+        "id": "warning-1768341989996-s9ocaju0w",
+        "reason": "# ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Sanae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nSanae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T22:06:30.008Z",
+        "documentPath": "/warnings/warning-1768341989996-s9ocaju0w.pdf"
+      }
+    ],
     "profileImage": "/profiles/El_Fahim_Sana/profile.png",
     "cvPath": "/profiles/El_Fahim_Sana/cv.pdf",
     "github": "https://github.com/ELFAHIM-SANA",
@@ -945,8 +967,16 @@
     "role": "AI Developer - CVS Service SQL Model",
     "domain": "Data Science and Artificial Intelligence",
     "status": "active",
-    "warningCount": 0,
-    "warnings": [],
+    "warningCount": 1,
+    "warnings": [
+      {
+        "id": "warning-1768340813319-jk2o5caob",
+        "reason": "# ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Ibtissam |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nIbtissam was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T21:46:53.323Z",
+        "documentPath": "/warnings/warning-1768340813319-jk2o5caob.pdf"
+      }
+    ],
     "profileImage": "/profiles/Ibtissam_Khannij/profile.png",
     "cvPath": "/profiles/Ibtissam_Khannij/cv.pdf",
     "github": "https://github.com/Ibtissam21-b",
@@ -1287,8 +1317,16 @@
     "role": "Data Developer - Data Warehouse & CVS Service",
     "domain": "Ingénierie Informatique et Management des Systèmes",
     "status": "active",
-    "warningCount": 0,
-    "warnings": [],
+    "warningCount": 1,
+    "warnings": [
+      {
+        "id": "warning-1768342023785-w0eq8w2rb",
+        "reason": "# ⚠️ Warning Notice - First Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | First Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T22:07:03.790Z",
+        "documentPath": "/warnings/warning-1768342023785-w0eq8w2rb.pdf"
+      }
+    ],
     "profileImage": "/profiles/Wafae_El_Kari/profile.png",
     "cvPath": "/profiles/Wafae_El_Kari/cv.pdf",
     "github": "https://github.com/Wafae-el",
@@ -1410,7 +1448,7 @@
     "role": "Front-end Developer - CVS Service",
     "domain": "Full-stack Development",
     "status": "active",
-    "warningCount": 1,
+    "warningCount": 2,
     "warnings": [
       {
         "id": "warning-1767566252881-4uyqadkq5",
@@ -1418,6 +1456,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-04T22:37:32.890Z",
         "documentPath": "/warnings/warning-1767566252881-4uyqadkq5.pdf"
+      },
+      {
+        "id": "warning-1768342063746-8s4bpgmvr",
+        "reason": "# ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-495 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-13T22:07:43.759Z",
+        "documentPath": "/warnings/warning-1768342063746-8s4bpgmvr.pdf"
       }
     ],
     "profileImage": "/profiles/Yasser_Touil/profile.png",
