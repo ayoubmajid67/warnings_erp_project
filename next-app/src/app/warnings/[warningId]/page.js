@@ -68,8 +68,8 @@ export default function WarningDetailsPage() {
 
   const handleShare = async () => {
     // Use production URL for sharing
-    const productionUrl = 'https://warnings-erp-project-ow30su4gp-ayoubmajid67s-projects.vercel.app';
-    const shareUrl = `${productionUrl}/warnings/${warningId}`;
+    const productionUrl = 'https://warnings-erp-project-g9st.vercel.app/warnings';
+    const shareUrl = `${productionUrl}/${warningId}`;
     
     if (navigator.share) {
       try {
@@ -88,8 +88,8 @@ export default function WarningDetailsPage() {
 
   const handleCopyLink = () => {
     // Use production URL for copying
-    const productionUrl = 'https://warnings-erp-project-ow30su4gp-ayoubmajid67s-projects.vercel.app';
-    const shareUrl = `${productionUrl}/warnings/${warningId}`;
+    const productionUrl = 'https://warnings-erp-project-g9st.vercel.app/warnings';
+    const shareUrl = `${productionUrl}/${warningId}`;
     navigator.clipboard.writeText(shareUrl);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
