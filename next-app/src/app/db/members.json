@@ -207,8 +207,8 @@
     "phone": "212 612-124695",
     "role": "AI Developer - Email Classification & CVS Service",
     "domain": "Intelligence Artificielle et Robotique",
-    "status": "active",
-    "warningCount": 2,
+    "status": "dropped",
+    "warningCount": 3,
     "warnings": [
       {
         "id": "warning-1767654501733-b7qkxlu56",
@@ -223,6 +223,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-13T21:40:42.915Z",
         "documentPath": "/warnings/warning-1768340442911-laicszdmz.pdf"
+      },
+      {
+        "id": "warning-1769088969611-xqfmrak41",
+        "reason": "# ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-307 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-22T13:36:09.613Z",
+        "documentPath": "/warnings/warning-1769088969611-xqfmrak41.pdf"
       }
     ],
     "profileImage": "/profiles/Amal_Lastak/profile.png",
@@ -357,8 +364,8 @@
     "phone": "212 639-343300",
     "role": "Front-end Developer - CVS Service",
     "domain": "Informatique",
-    "status": "active",
-    "warningCount": 2,
+    "status": "dropped",
+    "warningCount": 3,
     "warnings": [
       {
         "id": "warning-1767566190931-k6dxfks41",
@@ -373,6 +380,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-13T21:41:58.936Z",
         "documentPath": "/warnings/warning-1768340518930-i45g8dfrt.pdf"
+      },
+      {
+        "id": "warning-1769089061500-i7j4wlx2m",
+        "reason": "# ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-220 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- **Complete absence of communication**\r\n- No response to multiple follow-up messages\r\n- Failed to meet repeated deadlines\r\n",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-22T13:37:41.509Z",
+        "documentPath": "/warnings/warning-1769089061500-i7j4wlx2m.pdf"
       }
     ],
     "profileImage": "/profiles/Amine_Charro/profile.png",
@@ -1316,8 +1330,8 @@
     "phone": "212 663-054873",
     "role": "Data Developer - Data Warehouse & CVS Service",
     "domain": "Ingénierie Informatique et Management des Systèmes",
-    "status": "active",
-    "warningCount": 1,
+    "status": "dropped",
+    "warningCount": 3,
     "warnings": [
       {
         "id": "warning-1768342023785-w0eq8w2rb",
@@ -1325,6 +1339,20 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-13T22:07:03.790Z",
         "documentPath": "/warnings/warning-1768342023785-w0eq8w2rb.pdf"
+      },
+      {
+        "id": "warning-1769088838681-sjehb111i",
+        "reason": "# ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warning** | W1 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- No communication or progress updates provided\r\n- Failed to meet the deadline\r\n",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-22T13:33:58.685Z",
+        "documentPath": "/warnings/warning-1769088838681-sjehb111i.pdf"
+      },
+      {
+        "id": "warning-1769088901958-0uwhve65i",
+        "reason": "# ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | W1 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- **Complete absence of communication**\r\n- No response to multiple follow-up messages\r\n- Failed to meet repeated deadlines\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-22T13:35:01.961Z",
+        "documentPath": "/warnings/warning-1769088901958-0uwhve65i.pdf"
       }
     ],
     "profileImage": "/profiles/Wafae_El_Kari/profile.png",
@@ -1447,8 +1475,8 @@
     "phone": "212 701-270954",
     "role": "Front-end Developer - CVS Service",
     "domain": "Full-stack Development",
-    "status": "active",
-    "warningCount": 2,
+    "status": "dropped",
+    "warningCount": 3,
     "warnings": [
       {
         "id": "warning-1767566252881-4uyqadkq5",
@@ -1463,6 +1491,13 @@
         "issuedBy": "Admin",
         "issuedAt": "2026-01-13T22:07:43.759Z",
         "documentPath": "/warnings/warning-1768342063746-8s4bpgmvr.pdf"
+      },
+      {
+        "id": "warning-1769089005742-2ujo49wq6",
+        "reason": "# ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-495 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---",
+        "issuedBy": "Admin",
+        "issuedAt": "2026-01-22T13:36:45.745Z",
+        "documentPath": "/warnings/warning-1769089005742-2ujo49wq6.pdf"
       }
     ],
     "profileImage": "/profiles/Yasser_Touil/profile.png",

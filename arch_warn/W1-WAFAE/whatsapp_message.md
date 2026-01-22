@@ -16,7 +16,7 @@ This is to formally inform you that you have received your *First Warning*.
 • No submission or progress updates provided
 
 🔗 *Warning Details:*
-https://warnings-erp-project-ow30su4gp-ayoubmajid67s-projects.vercel.app/warnings/warning-1768342023785-w0eq8w2rb
+https://warnings-erp-project-g9st.vercel.app/warnings/warning-1768342023785-w0eq8w2rb
 
 Please take this as a formal notice. Further violations may result in additional disciplinary action.
 

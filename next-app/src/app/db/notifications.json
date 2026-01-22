@@ -226,5 +226,100 @@
     "type": "warning_action",
     "title": "Warning Issued to YASSER TOUIL",
     "message": "You issued the second warning to YASSER TOUIL. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 13, 2025 |\r\n| **Previous Warning** | ES-495 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. This is their final notice."
+  },
+  {
+    "id": "notif-1769088838687-oh0sn2c8q",
+    "createdAt": "2026-01-22T13:33:58.687Z",
+    "target": "member",
+    "memberId": "member-wafae",
+    "type": "warning",
+    "title": "Second Warning - Final Notice",
+    "message": "You have received your second warning. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warning** | W1 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- No communication or progress updates provided\r\n- Failed to meet the deadline\r\n. This is your final notice before being dropped.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1769088840300-5r9lmkldo",
+    "createdAt": "2026-01-22T13:34:00.300Z",
+    "target": "admin",
+    "memberId": "member-wafae",
+    "type": "warning_action",
+    "title": "Warning Issued to WAFAE ELKARI",
+    "message": "You issued the second warning to WAFAE ELKARI. Reason: # ⚠️ Warning Notice - Second Warning\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | Second Warning |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warning** | W1 (First Warning) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- No communication or progress updates provided\r\n- Failed to meet the deadline\r\n. This is their final notice."
+  },
+  {
+    "id": "notif-1769088901964-kx9e0aj6x",
+    "createdAt": "2026-01-22T13:35:01.964Z",
+    "target": "member",
+    "memberId": "member-wafae",
+    "type": "dropout",
+    "title": "Team Membership Terminated",
+    "message": "You have been removed from the team due to reaching the maximum number of warnings (3). Your access to the platform has been revoked. This decision is final.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1769088903437-lcoiluf4i",
+    "createdAt": "2026-01-22T13:35:03.437Z",
+    "target": "admin",
+    "memberId": "member-wafae",
+    "type": "dropout_action",
+    "title": "Member Dropped: WAFAE ELKARI",
+    "message": "You issued the third warning to WAFAE ELKARI. Reason: # ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Wafae |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | W1 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nWafae was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- **Complete absence of communication**\r\n- No response to multiple follow-up messages\r\n- Failed to meet repeated deadlines\r\n\r\n---. They have been dropped from the team."
+  },
+  {
+    "id": "notif-1769088969615-50ngu1nv7",
+    "createdAt": "2026-01-22T13:36:09.615Z",
+    "target": "member",
+    "memberId": "member-amal",
+    "type": "dropout",
+    "title": "Team Membership Terminated",
+    "message": "You have been removed from the team due to reaching the maximum number of warnings (3). Your access to the platform has been revoked. This decision is final.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1769088971032-5uomo0eju",
+    "createdAt": "2026-01-22T13:36:11.032Z",
+    "target": "admin",
+    "memberId": "member-amal",
+    "type": "dropout_action",
+    "title": "Member Dropped: AMAL LASTAK",
+    "message": "You issued the third warning to AMAL LASTAK. Reason: # ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amal Lastak |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-307 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmal Lastak was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. They have been dropped from the team."
+  },
+  {
+    "id": "notif-1769089005746-vby94wf4t",
+    "createdAt": "2026-01-22T13:36:45.746Z",
+    "target": "member",
+    "memberId": "member-yasser",
+    "type": "dropout",
+    "title": "Team Membership Terminated",
+    "message": "You have been removed from the team due to reaching the maximum number of warnings (3). Your access to the platform has been revoked. This decision is final.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1769089007179-54kt6tvl4",
+    "createdAt": "2026-01-22T13:36:47.179Z",
+    "target": "admin",
+    "memberId": "member-yasser",
+    "type": "dropout_action",
+    "title": "Member Dropped: YASSER TOUIL",
+    "message": "You issued the third warning to YASSER TOUIL. Reason: # ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Yasser Touil |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-495 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nYasser Touil was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---. They have been dropped from the team."
+  },
+  {
+    "id": "notif-1769089061510-fdx31a9jh",
+    "createdAt": "2026-01-22T13:37:41.510Z",
+    "target": "member",
+    "memberId": "member-amine",
+    "type": "dropout",
+    "title": "Team Membership Terminated",
+    "message": "You have been removed from the team due to reaching the maximum number of warnings (3). Your access to the platform has been revoked. This decision is final.",
+    "isRead": false
+  },
+  {
+    "id": "notif-1769089062910-8ledmd2v9",
+    "createdAt": "2026-01-22T13:37:42.910Z",
+    "target": "admin",
+    "memberId": "member-amine",
+    "type": "dropout_action",
+    "title": "Member Dropped: AMINE CHARRO",
+    "message": "You issued the third warning to AMINE CHARRO. Reason: # ⚠️ Warning Notice - Third Warning (FINAL)\r\n\r\n## 📋 Employee Information\r\n| Field | Value |\r\n|-------|-------|\r\n| **Employee Name** | Amine Charo |\r\n| **Warning Level** | Third Warning (FINAL) |\r\n| **Date Issued** | January 22, 2025 |\r\n| **Previous Warnings** | ES-220 (1st), W2 (2nd) |\r\n\r\n---\r\n\r\n## 📝 Task Description\r\nAmine Charo was assigned to complete the **Project Management Report** as part of the team deliverables.\r\n\r\n---\r\n\r\n## ❌ Reason for Warning\r\n- Did not complete the **Project Management Report**\r\n- **Complete absence of communication**\r\n- No response to multiple follow-up messages\r\n- Failed to meet repeated deadlines\r\n. They have been dropped from the team."
   }
 ]

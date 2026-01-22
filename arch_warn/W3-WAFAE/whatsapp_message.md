@@ -1,0 +1,28 @@
+# 📱 WhatsApp Notification Message - Third Warning (FINAL)
+
+## Message Template
+
+---
+
+```
+🚨 *FINAL WARNING - MEMBERSHIP TERMINATED* 🚨
+
+Dear Wafae,
+
+This is to formally inform you that you have received your *Third and Final Warning*.
+
+📋 *Reason:*
+• Failure to complete the Project Management Report
+• Complete absence of communication
+• No response to multiple follow-up messages
+
+⛔ *CONSEQUENCE:* Your membership has been TERMINATED effective immediately due to reaching the maximum number of warnings (3).
+
+🔗 *Warning Details:*
+[Warning Link](https://warnings-erp-project-g9st.vercel.app/warnings/warning-1769088901958-0uwhve65i)
+
+This decision is final.
+
+Best regards,
+Management Team
+```
